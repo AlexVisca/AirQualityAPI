@@ -1,7 +1,7 @@
 version: 1
 datastore:
-  username: dev
-  password: DevPassw0rd!
-  host: localhost
+  username: storage
+  password: store
+  host: api.lxvdev.xyz
   port: 3306
-  db: dev_data
+  db: telemetry

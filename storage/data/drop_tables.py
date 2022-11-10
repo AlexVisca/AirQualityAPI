@@ -5,7 +5,7 @@ conn = mysql.connector.connect(
     host="api.lxvdev.xyz", 
     port=3306, 
     user="storage", 
-    password="storeboughtsecrets", 
+    password="store", 
     database="telemetry")
 
 crs = conn.cursor()
