@@ -1,0 +1,6 @@
+version: 1
+server:
+  host: 127.0.0.1
+  port: 8090
+eventstore:
+  url: http://localhost:8090/

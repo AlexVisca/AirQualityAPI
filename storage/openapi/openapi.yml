@@ -1,0 +1,209 @@
+---
+openapi: 3.0.3
+info:
+  title: OpenAtmos - OpenAPI 3.0
+  description: |-
+    This is an air quality monitoring API that meets OpenAPI 3.0 specification.
+    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5/sub>.
+  contact:
+    email: dev@openatmos.com
+  license:
+    name: GNU General Public License (GPLv3)
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+  version: '2.0.0'
+servers:
+- url: http://localhost:8080
+  description: Receiver server
+- url: http://localhost:8090
+  description: Storage server
+tags:
+- name: Measurements
+  description: Data collected from environmental sensors
+paths:
+  /:
+    head:
+      operationId: app.root
+      responses:
+        '204':
+          description: 'Connection successful'
+
+  /temperature:
+    post:
+      tags:
+        - Measurements
+      summary: reports a temperature reading
+      operationId: app.temperature
+      description: Adds a new temperature reading to the system
+      responses:
+        '201':
+          description: item created
+        '400':
+          description: 'invalid data, object'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TemperatureReading'
+        description: Reading item to add
+    get:
+      tags:
+        - Measurements
+      summary: gets a temperature reading
+      operationId: app.get_temperature
+      description: gets temperature readings added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: limits the number of items per page
+          schema:
+            type: string
+            format: date-time
+            example: 2022-12-31 12:34:56.000000
+      responses:
+        '200':
+          description: successfully returned a list of temperatures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TemperatureReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /environment:
+    post:
+      tags:
+        - Measurements
+      summary: reports a environment reading
+      operationId: app.environment
+      description: Adds a new environment reading to the system
+      responses:
+        '201':
+          description: item created
+        '400':
+          description: 'invalid data, object'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EnvironmentReading'
+        description: Reading item to add
+    get:
+      tags:
+        - Measurements
+      summary: gets a environment reading
+      operationId: app.get_environment
+      description: gets environment readings added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: limits the number of items per page
+          schema:
+            type: string
+            format: date-time
+            example: 2022-12-31 12:34:56.000000
+      responses:
+        '200':
+          description: successfully returned a list of environment data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EnvironmentReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  schemas:
+    TemperatureReading:
+      type: object
+      required:
+      - trace_id
+      - device_id
+      - location
+      - timestamp
+      - temperature
+      properties:
+        trace_id:
+          type: string
+          format: uuid
+          example: c05e2a4a-618d-45a9-8409-cd996fa1ed85
+        device_id:
+          type: string
+          format: uuid
+          example: d9edf397-18cf-48f1-9960-4f2e5902668c
+        location:
+          type: string
+          description: Location of sensor
+          example: facility_1A_office
+        timestamp:
+          type: string
+          format: date-time
+          example: 2022-12-31 12:34:56.000000
+        temperature:
+          type: number
+          description: temperature in &deg;C
+          format: float
+          example: 21.7
+    
+    EnvironmentReading:
+      type: object
+      required:
+      - trace_id
+      - device_id
+      - location
+      - timestamp
+      - environment
+      properties:
+        trace_id:
+          type: string
+          format: uuid
+          example: b4b5e5a8-66a2-4c49-adf3-50d41b215e7b
+        device_id:
+          type: string
+          format: uuid
+          example: ecd866a3-0cc9-4592-99ed-0b6f549e9400
+        location:
+          type: string
+          description: Location of sensor
+          example: facility_1A_office
+        timestamp:
+          type: string
+          format: date-time
+          example: 2022-12-31 12:34:56.000000
+        environment:
+          $ref: '#/components/schemas/AirQuality'
+    
+    AirQuality:
+      type: object
+      required:
+        - pm2_5
+        - co_2
+      properties:
+        pm2_5:
+          type: integer
+          title: PM2.5
+          description: Particulate Matter 2.5&mu;m in &mu;g/m<sup>3</sup>
+          example: 35
+        co_2:
+          type: integer
+          title: CO2
+          description: Carbon Dioxide in parts-per-million (ppm)
+          example: 800
+    

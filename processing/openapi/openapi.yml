@@ -1,0 +1,79 @@
+---
+openapi: 3.0.3
+info:
+  title: OpenAtmos - OpenAPI 3.0
+  description: |-
+    This is an air quality monitoring API that meets OpenAPI 3.0 specification.
+    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5/sub>.
+  contact:
+    email: dev@openatmos.com
+  license:
+    name: GNU General Public License (GPLv3)
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+  version: '2.0.0'
+servers:
+- url: http://localhost:8080
+  description: Receiver server
+- url: http://localhost:8090
+  description: Storage server
+- url: http://localhost:8100
+  description: Processing server
+tags:
+- name: Measurements
+  description: Data collected from environmental sensors
+paths:
+  /stats:
+    get:
+      tags:
+        - Measurements
+      summary: Gets event stats
+      operationId: app.get_stats
+      description: Gets temperature and environment data statistics
+      responses:
+        '200':
+          description: sucessfully returned a list of data
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/EnvironmentStats'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  schemas:
+    EnvironmentStats:
+      type: object
+      required:
+      - max_temp
+      - min_temp
+      - avg_temp
+      - max_pm2_5
+      - max_co_2
+      properties:
+        max_temp:
+          type: number
+          format: float
+          example: 26.2
+        min_temp:
+          type: number
+          format: float
+          example: 16.8
+        avg_temp:
+          type: number
+          format: float
+          example: 23.4
+        max_pm2_5:
+          type: integer
+          example: 35
+        max_co_2:
+          type: integer
+          example: 800
