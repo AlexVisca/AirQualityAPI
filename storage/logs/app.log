@@ -1,0 +1,237 @@
+2022-11-10 15:16:17,848 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:16:17Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -8.903860396221033, 'timestamp': '2022-11-10T15:16:17Z', 'trace_id': '2b9b5d8d-70e9-42cc-8990-ae419ff3221c'}}
+2022-11-10 15:32:58,589 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:16:17Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -8.903860396221033, 'timestamp': '2022-11-10T15:16:17Z', 'trace_id': '2b9b5d8d-70e9-42cc-8990-ae419ff3221c'}}
+2022-11-10 15:32:58,969 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:16:17Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -8.903860396221033, 'timestamp': '2022-11-10T15:16:17Z', 'trace_id': '2b9b5d8d-70e9-42cc-8990-ae419ff3221c'}}
+2022-11-10 15:32:58,990 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:16:22Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 18.20702294833891, 'timestamp': '2022-11-10T15:16:22Z', 'trace_id': 'cea29091-5c95-48b9-89fb-3441b2bc0801'}}
+2022-11-10 15:32:59,052 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:16:22Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 18.20702294833891, 'timestamp': '2022-11-10T15:16:22Z', 'trace_id': 'cea29091-5c95-48b9-89fb-3441b2bc0801'}}
+2022-11-10 15:32:59,072 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:16:22Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 722, 'pm2_5': 28}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:16:22Z', 'trace_id': '4afba5d0-35b3-4a52-bdcf-c76762417fd7'}}
+2022-11-10 15:34:39,807 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:39Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 30.362566194275797, 'timestamp': '2022-11-10T15:34:39Z', 'trace_id': '68ec0e88-6fd7-4aff-8409-6331111ed1b1'}}
+2022-11-10 15:34:39,871 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:39Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 30.362566194275797, 'timestamp': '2022-11-10T15:34:39Z', 'trace_id': '68ec0e88-6fd7-4aff-8409-6331111ed1b1'}}
+2022-11-10 15:34:44,799 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 12.39309104789637, 'timestamp': '2022-11-10T15:34:44Z', 'trace_id': '62c6ff0e-bf03-4aca-9b94-3b0d258543bd'}}
+2022-11-10 15:34:44,859 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 12.39309104789637, 'timestamp': '2022-11-10T15:34:44Z', 'trace_id': '62c6ff0e-bf03-4aca-9b94-3b0d258543bd'}}
+2022-11-10 15:34:44,955 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:34:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 698, 'pm2_5': 15}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:34:44Z', 'trace_id': '79793d86-e4f5-4091-b8fb-f6f1c1f921ad'}}
+2022-11-10 15:34:49,811 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 13.986719282132746, 'timestamp': '2022-11-10T15:34:49Z', 'trace_id': '1545a4af-9728-4978-a1c5-7a26b83a5e00'}}
+2022-11-10 15:34:49,872 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 13.986719282132746, 'timestamp': '2022-11-10T15:34:49Z', 'trace_id': '1545a4af-9728-4978-a1c5-7a26b83a5e00'}}
+2022-11-10 15:34:49,964 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:34:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 316, 'pm2_5': 31}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:34:49Z', 'trace_id': 'bf1743f8-26d6-4cb6-b51c-a0b6df4a0022'}}
+2022-11-10 15:34:54,813 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:54Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 12.720311147026656, 'timestamp': '2022-11-10T15:34:54Z', 'trace_id': '266afd03-cde8-4f1b-a9f7-2fc9ae5909f0'}}
+2022-11-10 15:34:54,872 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:54Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 12.720311147026656, 'timestamp': '2022-11-10T15:34:54Z', 'trace_id': '266afd03-cde8-4f1b-a9f7-2fc9ae5909f0'}}
+2022-11-10 15:34:54,966 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:34:54Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 458, 'pm2_5': 15}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:34:54Z', 'trace_id': '6ed99b79-36cc-4f22-b283-3e4f8a3192b0'}}
+2022-11-10 15:34:59,810 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:59Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 10.589228302295918, 'timestamp': '2022-11-10T15:34:59Z', 'trace_id': 'db991c41-1369-4889-8367-a66aa091b4c2'}}
+2022-11-10 15:34:59,873 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:34:59Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 10.589228302295918, 'timestamp': '2022-11-10T15:34:59Z', 'trace_id': 'db991c41-1369-4889-8367-a66aa091b4c2'}}
+2022-11-10 15:34:59,970 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:34:59Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 737, 'pm2_5': 30}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:34:59Z', 'trace_id': '4eaff511-8dcb-4405-9193-aa562135dcfe'}}
+2022-11-10 15:35:04,800 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:35:04Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -14.958651006274732, 'timestamp': '2022-11-10T15:35:04Z', 'trace_id': '79cd9a86-53a4-4c9e-b823-2ca30b743568'}}
+2022-11-10 15:35:04,863 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:35:04Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -14.958651006274732, 'timestamp': '2022-11-10T15:35:04Z', 'trace_id': '79cd9a86-53a4-4c9e-b823-2ca30b743568'}}
+2022-11-10 15:35:04,957 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:35:04Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 381, 'pm2_5': 12}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:35:04Z', 'trace_id': 'fb4cd1ce-2199-4c8c-b6b5-f660cc055bfe'}}
+2022-11-10 15:35:09,805 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:35:09Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 11.35878827451408, 'timestamp': '2022-11-10T15:35:09Z', 'trace_id': 'd280a8b1-b1ac-4835-9d92-9c589081b1d3'}}
+2022-11-10 15:35:09,865 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T15:35:09Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 11.35878827451408, 'timestamp': '2022-11-10T15:35:09Z', 'trace_id': 'd280a8b1-b1ac-4835-9d92-9c589081b1d3'}}
+2022-11-10 15:35:09,959 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T15:35:09Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 461, 'pm2_5': 24}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T15:35:09Z', 'trace_id': '6abefa21-038e-484c-bbd3-8d9ec1867039'}}
+2022-11-10 16:16:23,376 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:23Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 29.65795240499003, 'timestamp': '2022-11-10T16:16:23Z', 'trace_id': '9f882d9c-97ee-4cc4-819d-cf72de92a5e8'}}
+2022-11-10 16:16:23,632 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:28,380 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:28Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 19.336292111156013, 'timestamp': '2022-11-10T16:16:28Z', 'trace_id': '37f8f497-f971-4a96-8621-e2c29acce724'}}
+2022-11-10 16:16:28,440 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:28,542 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:28Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 680, 'pm2_5': 10}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:28Z', 'trace_id': 'd921d99a-c98a-41b7-8cd9-3462bd9bfb49'}}
+2022-11-10 16:16:28,602 - database - INFO - Received environment telemetry
+2022-11-10 16:16:33,382 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:33Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 5.831869636954334, 'timestamp': '2022-11-10T16:16:33Z', 'trace_id': '36d71035-ce26-40e1-9a31-35ae76f89210'}}
+2022-11-10 16:16:33,441 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:33,538 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:33Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 324, 'pm2_5': 35}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:33Z', 'trace_id': '8498912d-01be-408a-b754-3309fc982151'}}
+2022-11-10 16:16:33,595 - database - INFO - Received environment telemetry
+2022-11-10 16:16:38,365 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:38Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 11.731354622686545, 'timestamp': '2022-11-10T16:16:38Z', 'trace_id': '445b311f-7e66-40e9-ad07-566bd9097bd1'}}
+2022-11-10 16:16:38,427 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:38,519 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:38Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 775, 'pm2_5': 23}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:38Z', 'trace_id': '620d2e7c-9f61-42d0-ac10-5c1143f18126'}}
+2022-11-10 16:16:38,574 - database - INFO - Received environment telemetry
+2022-11-10 16:16:43,362 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:43Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 11.883580685633792, 'timestamp': '2022-11-10T16:16:43Z', 'trace_id': '5534df9f-0841-4ea2-a82c-2dcab0837107'}}
+2022-11-10 16:16:43,418 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:43,519 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:43Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 400, 'pm2_5': 12}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:43Z', 'trace_id': '3ee14ce6-a76c-4474-b651-f56cf623118c'}}
+2022-11-10 16:16:43,574 - database - INFO - Received environment telemetry
+2022-11-10 16:16:48,363 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:48Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 9.467571649059163, 'timestamp': '2022-11-10T16:16:48Z', 'trace_id': '0d0892d0-ca29-42c8-af4b-b5e4122c5ad4'}}
+2022-11-10 16:16:48,418 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:48,520 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:48Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 343, 'pm2_5': 21}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:48Z', 'trace_id': '8cad9636-83b5-47c5-b823-2ff1a9683cfe'}}
+2022-11-10 16:16:48,575 - database - INFO - Received environment telemetry
+2022-11-10 16:16:53,345 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:53Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 15.123919337409596, 'timestamp': '2022-11-10T16:16:53Z', 'trace_id': '52bc60e2-0c73-4f5e-a6c7-30003e61876e'}}
+2022-11-10 16:16:53,402 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:53,500 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:53Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 458, 'pm2_5': 18}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:53Z', 'trace_id': '45cd5e37-e210-4479-9559-2ca67830e773'}}
+2022-11-10 16:16:53,555 - database - INFO - Received environment telemetry
+2022-11-10 16:16:58,364 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-10T16:16:58Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 34.559268038013336, 'timestamp': '2022-11-10T16:16:58Z', 'trace_id': 'b15f4530-c0d6-41b7-8c04-7b03de2ccd83'}}
+2022-11-10 16:16:58,422 - database - INFO - Received temperature telemetry
+2022-11-10 16:16:58,520 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:16:58Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 494, 'pm2_5': 4}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:16:58Z', 'trace_id': 'c9277445-34c9-4c6b-b68a-315bd492140a'}}
+2022-11-10 16:16:58,579 - database - INFO - Received environment telemetry
+2022-11-10 16:17:03,489 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-10T16:17:03Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 604, 'pm2_5': 31}, 'location': 'facility_1A_office', 'timestamp': '2022-11-10T16:17:03Z', 'trace_id': 'de160ff9-5c34-4928-85a4-6839e4b96950'}}
+2022-11-10 16:17:03,555 - database - INFO - Received environment telemetry
+2022-11-11 10:12:44,505 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:12:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 32.73532801062677, 'timestamp': '2022-11-11T10:12:44Z', 'trace_id': '417ee802-a4f4-40d0-ac46-7c1b7c6c85f7'}}
+2022-11-11 10:12:44,750 - database - INFO - stored temperature telemetry
+2022-11-11 10:12:49,446 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:12:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -1.2565473076323848, 'timestamp': '2022-11-11T10:12:49Z', 'trace_id': 'a8514685-690d-4117-9342-34b1a9b6ee9b'}}
+2022-11-11 10:12:49,500 - database - INFO - stored temperature telemetry
+2022-11-11 10:12:49,631 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:12:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 210, 'pm2_5': 29}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:12:49Z', 'trace_id': 'b0161ba8-dbe6-4e04-b177-04a929842b23'}}
+2022-11-11 10:12:49,692 - database - INFO - stored environment telemetry
+2022-11-11 10:12:54,454 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:12:54Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 23.17255215041189, 'timestamp': '2022-11-11T10:12:54Z', 'trace_id': '56ed8325-5d37-4d6a-aaf0-7532d0260195'}}
+2022-11-11 10:12:54,510 - database - INFO - stored temperature telemetry
+2022-11-11 10:12:54,611 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:12:54Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 237, 'pm2_5': 8}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:12:54Z', 'trace_id': '2d3e0d2d-0bee-48cb-ad0d-ee27ffa1b922'}}
+2022-11-11 10:12:54,666 - database - INFO - stored environment telemetry
+2022-11-11 10:12:59,446 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:12:59Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 37.841615647838175, 'timestamp': '2022-11-11T10:12:59Z', 'trace_id': 'ecfded1e-dfb9-450e-afc3-459b197e3714'}}
+2022-11-11 10:12:59,501 - database - INFO - stored temperature telemetry
+2022-11-11 10:12:59,599 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:12:59Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 632, 'pm2_5': 25}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:12:59Z', 'trace_id': '3239935c-3f1c-4df7-af34-77edf2461ee7'}}
+2022-11-11 10:12:59,663 - database - INFO - stored environment telemetry
+2022-11-11 10:13:04,447 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:04Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 35.08309944429185, 'timestamp': '2022-11-11T10:13:04Z', 'trace_id': '0279c30f-b93e-4093-b443-346381227062'}}
+2022-11-11 10:13:04,501 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:04,600 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:04Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 773, 'pm2_5': 15}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:04Z', 'trace_id': '909ed3e6-2b74-4898-99ed-dbd8131db618'}}
+2022-11-11 10:13:04,653 - database - INFO - stored environment telemetry
+2022-11-11 10:13:09,440 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:09Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 19.706643724632862, 'timestamp': '2022-11-11T10:13:09Z', 'trace_id': '810eb0d5-20cf-490c-b8f2-b5f721360d0e'}}
+2022-11-11 10:13:09,494 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:09,591 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:09Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 770, 'pm2_5': 19}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:09Z', 'trace_id': 'd5a3f8cc-d30c-4640-8a0c-ec5c5444c4f2'}}
+2022-11-11 10:13:09,644 - database - INFO - stored environment telemetry
+2022-11-11 10:13:14,759 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:14Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 603, 'pm2_5': 9}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:14Z', 'trace_id': '76a90193-69f8-456a-bcac-b1c82bb81b91'}}
+2022-11-11 10:13:14,832 - database - INFO - stored environment telemetry
+2022-11-11 10:13:15,586 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:15Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 33.92870138488662, 'timestamp': '2022-11-11T10:13:14Z', 'trace_id': '4ff264be-d3b0-4858-a058-fa178e7dde44'}}
+2022-11-11 10:13:15,661 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:19,450 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:19Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': -2.5791780001174835, 'timestamp': '2022-11-11T10:13:19Z', 'trace_id': '44ecd8a7-d055-4379-bae7-c3e045dcae7d'}}
+2022-11-11 10:13:19,504 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:20,734 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:20Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 317, 'pm2_5': 27}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:20Z', 'trace_id': '43f2a1db-e1bb-4146-a3ca-0308199f2724'}}
+2022-11-11 10:13:20,789 - database - INFO - stored environment telemetry
+2022-11-11 10:13:24,449 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:24Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 30.076851791281598, 'timestamp': '2022-11-11T10:13:24Z', 'trace_id': '9481b993-15e3-48c6-85e1-5d659ac6500d'}}
+2022-11-11 10:13:24,505 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:24,603 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:24Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 669, 'pm2_5': 17}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:24Z', 'trace_id': 'fb980f65-c624-48b1-a3d8-9c552ae79f73'}}
+2022-11-11 10:13:24,658 - database - INFO - stored environment telemetry
+2022-11-11 10:13:29,456 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:29Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 41.126952455803966, 'timestamp': '2022-11-11T10:13:29Z', 'trace_id': 'd4ccdf12-7337-4a9e-8ca6-92e2624123df'}}
+2022-11-11 10:13:29,509 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:29,608 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:29Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 534, 'pm2_5': 33}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:29Z', 'trace_id': '6dc098bc-7352-4235-a45e-441c27d7271f'}}
+2022-11-11 10:13:29,661 - database - INFO - stored environment telemetry
+2022-11-11 10:13:34,450 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:34Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 7.491978373191703, 'timestamp': '2022-11-11T10:13:34Z', 'trace_id': '22ba055b-bc77-4cb5-bd51-1779e0565501'}}
+2022-11-11 10:13:34,502 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:34,602 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:34Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 501, 'pm2_5': 14}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:34Z', 'trace_id': 'de9747a1-826c-4274-b6d5-5c7f7e078b1d'}}
+2022-11-11 10:13:34,652 - database - INFO - stored environment telemetry
+2022-11-11 10:13:39,441 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:39Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 4.921042682643282, 'timestamp': '2022-11-11T10:13:39Z', 'trace_id': '5c386064-ba7e-46ad-8966-e2cf48fbb6d2'}}
+2022-11-11 10:13:39,495 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:39,601 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:39Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 745, 'pm2_5': 6}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:39Z', 'trace_id': '2086b22c-67a0-44fc-bdda-df4a8c094d10'}}
+2022-11-11 10:13:39,653 - database - INFO - stored environment telemetry
+2022-11-11 10:13:44,444 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 44.441838349639475, 'timestamp': '2022-11-11T10:13:44Z', 'trace_id': 'cd335896-836b-4a19-a9c2-8175218ce12c'}}
+2022-11-11 10:13:44,500 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:44,598 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:44Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 688, 'pm2_5': 29}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:44Z', 'trace_id': '6af4d360-3d5c-4224-912a-7acb751b11b8'}}
+2022-11-11 10:13:44,653 - database - INFO - stored environment telemetry
+2022-11-11 10:13:49,459 - database - INFO - Message: {'type': 'temperature', 'datetime': '2022-11-11T10:13:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'location': 'facility_1A_office', 'temperature': 24.088536434698646, 'timestamp': '2022-11-11T10:13:49Z', 'trace_id': '9ae46845-abba-4d1a-a732-d16dfa4dbfe9'}}
+2022-11-11 10:13:49,513 - database - INFO - stored temperature telemetry
+2022-11-11 10:13:49,567 - database - INFO - Message: {'type': 'environment', 'datetime': '2022-11-11T10:13:49Z', 'payload': {'device_id': 'd9edf397-18cf-48f1-9960-4f2e5902668c', 'environment': {'co_2': 444, 'pm2_5': 12}, 'location': 'facility_1A_office', 'timestamp': '2022-11-11T10:13:49Z', 'trace_id': '9999c570-013c-4483-b7e0-bfa71195dc61'}}
+2022-11-11 10:13:49,619 - database - INFO - stored environment telemetry
+2022-11-11 11:00:17,563 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:22,342 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:22,422 - database - INFO - stored environment telemetry
+2022-11-11 11:00:27,338 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:27,421 - database - INFO - stored environment telemetry
+2022-11-11 11:00:32,341 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:32,422 - database - INFO - stored environment telemetry
+2022-11-11 11:00:37,343 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:37,424 - database - INFO - stored environment telemetry
+2022-11-11 11:00:42,338 - database - INFO - stored temperature telemetry
+2022-11-11 11:00:42,422 - database - INFO - stored environment telemetry
+2022-11-11 11:00:47,373 - database - INFO - stored environment telemetry
+2022-11-11 12:10:11,109 - database - INFO - stored temperature telemetry
+2022-11-11 12:10:15,923 - database - INFO - stored temperature telemetry
+2022-11-11 12:10:16,000 - database - INFO - stored environment telemetry
+2022-11-11 12:10:20,926 - database - INFO - stored temperature telemetry
+2022-11-11 12:10:20,999 - database - INFO - stored environment telemetry
+2022-11-11 12:10:25,925 - database - INFO - stored temperature telemetry
+2022-11-11 12:10:25,995 - database - INFO - stored environment telemetry
+2022-11-11 12:10:30,932 - database - INFO - stored temperature telemetry
+2022-11-11 12:10:31,003 - database - INFO - stored environment telemetry
+2022-11-11 12:38:21,503 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:26,315 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:26,393 - database - INFO - stored environment telemetry
+2022-11-11 12:38:31,285 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:31,361 - database - INFO - stored environment telemetry
+2022-11-11 12:38:36,275 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:36,352 - database - INFO - stored environment telemetry
+2022-11-11 12:38:41,286 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:41,366 - database - INFO - stored environment telemetry
+2022-11-11 12:38:46,276 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:46,354 - database - INFO - stored environment telemetry
+2022-11-11 12:38:51,284 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:51,357 - database - INFO - stored environment telemetry
+2022-11-11 12:38:56,278 - database - INFO - stored temperature telemetry
+2022-11-11 12:38:56,355 - database - INFO - stored environment telemetry
+2022-11-11 12:39:01,294 - database - INFO - stored temperature telemetry
+2022-11-11 12:39:01,372 - database - INFO - stored environment telemetry
+2022-11-11 12:39:06,314 - database - INFO - stored temperature telemetry
+2022-11-11 12:39:06,393 - database - INFO - stored environment telemetry
+2022-11-11 12:39:11,291 - database - INFO - stored temperature telemetry
+2022-11-11 12:39:11,373 - database - INFO - stored environment telemetry
+2022-11-11 12:46:47,479 - database - INFO - stored temperature telemetry
+2022-11-11 12:46:52,269 - database - INFO - stored temperature telemetry
+2022-11-11 12:46:52,349 - database - INFO - stored environment telemetry
+2022-11-11 12:46:57,272 - database - INFO - stored temperature telemetry
+2022-11-11 12:46:57,343 - database - INFO - stored environment telemetry
+2022-11-11 12:47:02,270 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:02,343 - database - INFO - stored environment telemetry
+2022-11-11 12:47:07,237 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:07,330 - database - INFO - stored environment telemetry
+2022-11-11 12:47:12,226 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:12,334 - database - INFO - stored environment telemetry
+2022-11-11 12:47:17,232 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:17,329 - database - INFO - stored environment telemetry
+2022-11-11 12:47:22,241 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:22,334 - database - INFO - stored environment telemetry
+2022-11-11 12:47:27,229 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:27,301 - database - INFO - stored environment telemetry
+2022-11-11 12:47:32,281 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:32,374 - database - INFO - stored environment telemetry
+2022-11-11 12:47:37,236 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:37,306 - database - INFO - stored environment telemetry
+2022-11-11 12:47:42,228 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:42,318 - database - INFO - stored environment telemetry
+2022-11-11 12:47:47,241 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:47,312 - database - INFO - stored environment telemetry
+2022-11-11 12:47:52,238 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:52,309 - database - INFO - stored environment telemetry
+2022-11-11 12:47:57,244 - database - INFO - stored temperature telemetry
+2022-11-11 12:47:57,315 - database - INFO - stored environment telemetry
+2022-11-11 12:48:02,265 - database - INFO - stored environment telemetry
+2022-11-11 13:03:01,276 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:06,053 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:06,136 - database - INFO - stored environment telemetry
+2022-11-11 13:03:11,054 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:11,132 - database - INFO - stored environment telemetry
+2022-11-11 13:03:16,048 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:16,124 - database - INFO - stored environment telemetry
+2022-11-11 13:03:21,044 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:21,121 - database - INFO - stored environment telemetry
+2022-11-11 13:03:26,049 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:26,126 - database - INFO - stored environment telemetry
+2022-11-11 13:03:31,044 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:31,120 - database - INFO - stored environment telemetry
+2022-11-11 13:03:36,042 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:36,116 - database - INFO - stored environment telemetry
+2022-11-11 13:03:41,067 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:41,147 - database - INFO - stored environment telemetry
+2022-11-11 13:03:46,051 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:46,126 - database - INFO - stored environment telemetry
+2022-11-11 13:03:51,064 - database - INFO - stored temperature telemetry
+2022-11-11 13:03:51,141 - database - INFO - stored environment telemetry
+2022-11-11 13:06:48,163 - database - INFO - stored temperature telemetry
+2022-11-11 13:06:48,528 - database - INFO - stored temperature telemetry
+2022-11-11 13:06:49,553 - database - INFO - stored temperature telemetry
+2022-11-11 13:06:52,559 - database - INFO - stored environment telemetry
+2022-11-11 13:06:53,547 - database - INFO - stored environment telemetry
+2022-11-11 13:06:54,557 - database - INFO - stored environment telemetry
+2022-11-11 13:06:58,526 - database - INFO - stored temperature telemetry
+2022-11-11 13:06:59,521 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:00,511 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:03,576 - database - INFO - stored environment telemetry
+2022-11-11 13:07:04,543 - database - INFO - stored environment telemetry
+2022-11-11 13:07:05,542 - database - INFO - stored environment telemetry
+2022-11-11 13:07:09,511 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:10,516 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:11,527 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:14,539 - database - INFO - stored environment telemetry
+2022-11-11 13:07:15,553 - database - INFO - stored environment telemetry
+2022-11-11 13:07:16,577 - database - INFO - stored environment telemetry
+2022-11-11 13:07:20,508 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:21,522 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:22,528 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:25,554 - database - INFO - stored environment telemetry
+2022-11-11 13:07:26,545 - database - INFO - stored environment telemetry
+2022-11-11 13:07:27,541 - database - INFO - stored environment telemetry
+2022-11-11 13:07:31,508 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:32,533 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:33,518 - database - INFO - stored temperature telemetry
+2022-11-11 13:07:36,559 - database - INFO - stored environment telemetry
+2022-11-11 15:48:13,225 - database - ERROR - Connection failed - Unable to connect to a broker to fetch metadata. See logs.
+2022-11-11 15:52:49,086 - database - ERROR - Connection failed - Unable to connect to a broker to fetch metadata. See logs.
+2022-11-11 15:57:24,697 - database - ERROR - Connection failed - Unable to connect to a broker to fetch metadata. See logs.
+2022-11-11 15:57:26,707 - database - ERROR - Unable to connect to kafka server. Max retries exceeded

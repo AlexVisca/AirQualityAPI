@@ -48,41 +48,6 @@ def get_stats() -> dict:
     return stats, 200
 
 
-# Processer Logic
-def query_db() -> dict:
-    session = DB_SESSION()
-    result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
-    payload = {
-        'count': result.count, 
-        'temp_buffer': result.temp_buffer, 
-        'max_temp': result.max_temp, 
-        'min_temp': result.min_temp, 
-        'avg_temp': result.avg_temp, 
-        'max_pm2_5': result.max_pm2_5, 
-        'max_co_2': result.max_co_2, 
-        'last_updated': result.last_updated.strftime(DATETIME_FORMAT)
-    }
-    session.close()
-    
-    return payload
-
-def insert_db(data: dict) -> None:
-    session = DB_SESSION()
-    stats = Stats(
-        count=data['count'], 
-        temp_buffer=data['temp_buffer'], 
-        max_temp=data['max_temp'], 
-        min_temp=data['min_temp'], 
-        avg_temp=data['avg_temp'], 
-        max_pm2_5=data['max_pm2_5'], 
-        max_co_2=data['max_co_2'], 
-        last_updated=datetime.strptime(data['last_updated'], DATETIME_FORMAT)
-    )
-    session.add(stats)
-    session.commit()
-
-    session.close()
-
 def populate_stats() -> None:
     logger.info("Started periodic processing")
     # read in stats from sqlite db
@@ -132,11 +97,11 @@ def populate_stats() -> None:
         payload = {
             'count': count, 
             'temp_buffer': new_buffer, 
-            'max_temp': max(last_max, max(temp_list)), 
-            'min_temp': min(last_min, min(temp_list)), 
+            'max_temp': max(last_max, max(temp_list, default=-22)), 
+            'min_temp': min(last_min, min(temp_list, default=52)), 
             'avg_temp': round(new_buffer/count, 2), 
-            'max_pm2_5': max(last_max_pm25, max(pm25_list)), 
-            'max_co_2': max(last_max_co_2, max(co2_list)), 
+            'max_pm2_5': max(last_max_pm25, max(pm25_list, default=0)), 
+            'max_co_2': max(last_max_co_2, max(co2_list, default=0)), 
             'last_updated': timestamp
         }
         # Add new row to database
@@ -148,16 +113,56 @@ def populate_stats() -> None:
     
     logger.info("Stopped periodic processing")
 
-def init_scheduler() -> None:
-    sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats, 
-        'interval', 
-        seconds=INTERVAL
-        )
-    sched.start()
+# Processer sub-functions
+def query_db() -> dict:
+    session = DB_SESSION()
+    result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
+    payload = {
+        'count': result.count, 
+        'temp_buffer': result.temp_buffer, 
+        'max_temp': result.max_temp, 
+        'min_temp': result.min_temp, 
+        'avg_temp': result.avg_temp, 
+        'max_pm2_5': result.max_pm2_5, 
+        'max_co_2': result.max_co_2, 
+        'last_updated': result.last_updated.strftime(DATETIME_FORMAT)
+    }
+    session.close()
+    
+    return payload
+
+def insert_db(data: dict) -> None:
+    session = DB_SESSION()
+    stats = Stats(
+        count=data['count'], 
+        temp_buffer=data['temp_buffer'], 
+        max_temp=data['max_temp'], 
+        min_temp=data['min_temp'], 
+        avg_temp=data['avg_temp'], 
+        max_pm2_5=data['max_pm2_5'], 
+        max_co_2=data['max_co_2'], 
+        last_updated=datetime.strptime(data['last_updated'], DATETIME_FORMAT)
+    )
+    session.add(stats)
+    session.commit()
+
+    session.close()
+
+def init_db() -> None:
+    # populate first row with default stats
+    session = DB_SESSION()
+    stats = Stats(count=0, temp_buffer=0, 
+        max_temp=-21, min_temp=51, avg_temp=0, 
+        max_pm2_5=0, max_co_2=0, 
+        last_updated=datetime.now()
+    )
+    session.add(stats)
+    session.commit()
+    
+    session.close()
 
 # Server connection
-def establish_connection(url: str, timeout: int) -> None:
+def create_connection(url: str, timeout: int) -> None:
     retries: int = 0
     while retries < timeout:
         try:
@@ -175,18 +180,32 @@ def establish_connection(url: str, timeout: int) -> None:
         
         except requests.exceptions.RequestException as e:
             logger.error(e)
-            raise SystemExit(e)
+            raise SystemExit
     
     else:
         logger.error(f"Unable to connect to server at {url}. Max retries exceeded")
-        raise SystemExit()
+        raise SystemExit
+
+def init_scheduler() -> None:
+    sched = BackgroundScheduler(daemon=True)
+    sched.add_job(populate_stats, 
+        'interval', 
+        seconds=INTERVAL
+        )
+    sched.start()
 
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
 app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
 
+def main() -> None:
+    init_db()
+    create_connection(SERVER_URL, TIMEOUT)
+    init_scheduler()
+    app.run(
+        port=8100, 
+        debug=False)
+
 
 if __name__ == '__main__':
-    establish_connection(SERVER_URL, TIMEOUT)
-    init_scheduler()
-    app.run(port=8100, debug=True)
+    main()

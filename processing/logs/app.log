@@ -1,0 +1,1132 @@
+2022-11-10 16:15:59,732 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-10 16:16:00,270 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-10 16:16:04,787 - processer - INFO - Started periodic processing
+2022-11-10 16:16:05,148 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:05,238 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:05,238 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:05,239 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:05,331 - processer - INFO - Started periodic processing
+2022-11-10 16:16:05,403 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:05,472 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:05,472 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:05,472 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:09,795 - processer - INFO - Started periodic processing
+2022-11-10 16:16:09,869 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:09,940 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:09,940 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:09,940 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:10,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:10,415 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:10,481 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:10,481 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:10,481 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:14,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:14,880 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:14,952 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:14,952 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:14,953 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:15,335 - processer - INFO - Started periodic processing
+2022-11-10 16:16:15,406 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:15,481 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:15,481 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:15,481 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:19,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:19,863 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:19,935 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:19,935 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:19,935 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:20,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:20,421 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:20,486 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:20,486 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:20,486 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:24,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:24,863 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:24,936 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:25,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:25,405 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:25,473 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:29,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:29,872 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-10 16:16:29,939 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:29,965 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:29,965 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:30,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:30,423 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:30,491 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:30,492 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:30,492 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:34,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:34,853 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:34,919 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:34,933 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:34,933 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:35,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:35,414 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:35,475 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:35,475 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:35,476 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:39,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:39,870 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:39,938 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:39,945 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:39,945 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:40,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:40,419 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:40,490 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:40,491 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:40,491 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:44,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:44,862 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:44,941 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:44,995 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:44,995 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:45,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:45,419 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:45,484 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:45,484 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:45,484 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:49,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:49,858 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:49,926 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:49,983 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:49,983 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:50,334 - processer - INFO - Started periodic processing
+2022-11-10 16:16:50,402 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:50,462 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:50,462 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:50,462 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:54,788 - processer - INFO - Started periodic processing
+2022-11-10 16:16:54,872 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:54,941 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-10 16:16:54,996 - processer - INFO - Database updated with latest telemetry
+2022-11-10 16:16:54,996 - processer - INFO - Stopped periodic processing
+2022-11-10 16:16:55,335 - processer - INFO - Started periodic processing
+2022-11-10 16:16:55,413 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:55,478 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-10 16:16:55,478 - processer - INFO - Telemetry is up to date
+2022-11-10 16:16:55,478 - processer - INFO - Stopped periodic processing
+2022-11-11 10:08:23,985 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:08:24,500 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:08:29,048 - processer - INFO - Started periodic processing
+2022-11-11 10:08:29,562 - processer - INFO - Started periodic processing
+2022-11-11 10:08:39,110 - processer - INFO - Response received from database. Status code: 500, content: 4
+2022-11-11 10:08:39,605 - processer - INFO - Response received from database. Status code: 500, content: 4
+2022-11-11 10:08:49,135 - processer - INFO - Response received from database. Status code: 500, content: 4
+2022-11-11 10:12:07,802 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:12:08,339 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:12:12,865 - processer - INFO - Started periodic processing
+2022-11-11 10:12:13,161 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:13,226 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:13,227 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:13,227 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:13,402 - processer - INFO - Started periodic processing
+2022-11-11 10:12:13,488 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:13,544 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:13,545 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:13,545 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:17,869 - processer - INFO - Started periodic processing
+2022-11-11 10:12:17,931 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:17,986 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:17,986 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:17,986 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:18,411 - processer - INFO - Started periodic processing
+2022-11-11 10:12:18,482 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:18,536 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:18,536 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:18,537 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:22,864 - processer - INFO - Started periodic processing
+2022-11-11 10:12:23,030 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:23,204 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:23,205 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:23,205 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:23,402 - processer - INFO - Started periodic processing
+2022-11-11 10:12:23,468 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:23,647 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:23,647 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:23,647 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:27,865 - processer - INFO - Started periodic processing
+2022-11-11 10:12:27,928 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:27,993 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:27,993 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:27,993 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:28,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:28,476 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:28,530 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:28,530 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:28,530 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:32,865 - processer - INFO - Started periodic processing
+2022-11-11 10:12:32,934 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:32,987 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:32,987 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:32,987 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:33,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:33,474 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:33,527 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:33,527 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:33,527 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:37,865 - processer - INFO - Started periodic processing
+2022-11-11 10:12:37,936 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:37,992 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:37,992 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:37,992 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:38,402 - processer - INFO - Started periodic processing
+2022-11-11 10:12:38,471 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:38,528 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:38,528 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:38,528 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:42,865 - processer - INFO - Started periodic processing
+2022-11-11 10:12:42,924 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:42,977 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:42,977 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:42,977 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:43,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:43,473 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:43,527 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:43,527 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:43,528 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:47,866 - processer - INFO - Started periodic processing
+2022-11-11 10:12:47,924 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:12:47,977 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:48,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:48,463 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:12:48,519 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:52,866 - processer - INFO - Started periodic processing
+2022-11-11 10:12:52,922 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 10:12:52,979 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:12:53,039 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:12:53,039 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:53,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:53,473 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:53,526 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:53,526 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:53,526 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:57,866 - processer - INFO - Started periodic processing
+2022-11-11 10:12:57,926 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:12:57,980 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:12:58,035 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:12:58,035 - processer - INFO - Stopped periodic processing
+2022-11-11 10:12:58,403 - processer - INFO - Started periodic processing
+2022-11-11 10:12:58,479 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:58,532 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:12:58,532 - processer - INFO - Telemetry is up to date
+2022-11-11 10:12:58,533 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:02,866 - processer - INFO - Started periodic processing
+2022-11-11 10:13:02,930 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:02,991 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:03,004 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:03,004 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:03,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:03,470 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:03,525 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:03,525 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:03,525 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:07,866 - processer - INFO - Started periodic processing
+2022-11-11 10:13:07,926 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:07,984 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:07,998 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:07,998 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:08,402 - processer - INFO - Started periodic processing
+2022-11-11 10:13:08,467 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:08,526 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:08,527 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:08,527 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:12,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:12,925 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:12,981 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:12,993 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:12,993 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:13,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:13,475 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:13,530 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:13,530 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:13,530 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:17,866 - processer - INFO - Started periodic processing
+2022-11-11 10:13:17,923 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:17,979 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:17,991 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:17,992 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:18,404 - processer - INFO - Started periodic processing
+2022-11-11 10:13:18,462 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:18,516 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:18,516 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:18,516 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:22,866 - processer - INFO - Started periodic processing
+2022-11-11 10:13:22,925 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:22,982 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:22,994 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:22,994 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:23,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:23,479 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:23,535 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:23,536 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:23,536 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:27,866 - processer - INFO - Started periodic processing
+2022-11-11 10:13:27,924 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:27,978 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:27,990 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:27,990 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:28,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:28,461 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:28,516 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:28,516 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:28,516 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:32,864 - processer - INFO - Started periodic processing
+2022-11-11 10:13:32,919 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:32,973 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:32,983 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:32,983 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:33,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:33,469 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:33,523 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:33,524 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:33,524 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:37,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:37,940 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:38,005 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:38,019 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:38,020 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:38,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:38,480 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:38,547 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:38,547 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:38,547 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:42,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:42,935 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:42,988 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:43,043 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:43,043 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:43,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:43,482 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:43,544 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:43,544 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:43,545 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:47,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:47,936 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:47,991 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:48,004 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:48,005 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:48,402 - processer - INFO - Started periodic processing
+2022-11-11 10:13:48,474 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:48,538 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:48,538 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:48,538 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:52,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:52,935 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:52,993 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 10:13:53,008 - processer - INFO - Database updated with latest telemetry
+2022-11-11 10:13:53,008 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:53,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:53,466 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:53,524 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:53,525 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:53,525 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:57,865 - processer - INFO - Started periodic processing
+2022-11-11 10:13:57,937 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:57,993 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:57,993 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:57,994 - processer - INFO - Stopped periodic processing
+2022-11-11 10:13:58,403 - processer - INFO - Started periodic processing
+2022-11-11 10:13:58,475 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:58,535 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:13:58,535 - processer - INFO - Telemetry is up to date
+2022-11-11 10:13:58,536 - processer - INFO - Stopped periodic processing
+2022-11-11 10:14:02,865 - processer - INFO - Started periodic processing
+2022-11-11 10:14:02,936 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:14:02,990 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:14:02,990 - processer - INFO - Telemetry is up to date
+2022-11-11 10:14:02,990 - processer - INFO - Stopped periodic processing
+2022-11-11 10:14:03,403 - processer - INFO - Started periodic processing
+2022-11-11 10:14:03,473 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:14:03,531 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:14:03,531 - processer - INFO - Telemetry is up to date
+2022-11-11 10:14:03,531 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:15,381 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:56:15,896 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 10:56:20,443 - processer - INFO - Started periodic processing
+2022-11-11 10:56:20,767 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:20,826 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:20,826 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:20,826 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:20,958 - processer - INFO - Started periodic processing
+2022-11-11 10:56:21,014 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:21,065 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:21,065 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:21,065 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:25,451 - processer - INFO - Started periodic processing
+2022-11-11 10:56:25,519 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:25,575 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:25,575 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:25,575 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:25,962 - processer - INFO - Started periodic processing
+2022-11-11 10:56:26,034 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:26,086 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:26,086 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:26,086 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:30,442 - processer - INFO - Started periodic processing
+2022-11-11 10:56:30,505 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:30,566 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:30,566 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:30,566 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:30,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:31,055 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:31,109 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:31,109 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:31,109 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:35,443 - processer - INFO - Started periodic processing
+2022-11-11 10:56:35,512 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:35,572 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:35,572 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:35,572 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:35,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:36,060 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:36,117 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:36,117 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:36,117 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:40,443 - processer - INFO - Started periodic processing
+2022-11-11 10:56:40,524 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:40,589 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:40,590 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:40,590 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:40,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:41,068 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:41,130 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:41,130 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:41,131 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:45,444 - processer - INFO - Started periodic processing
+2022-11-11 10:56:45,514 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:45,568 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:45,568 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:45,568 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:45,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:46,030 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:46,089 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:46,089 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:46,089 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:50,444 - processer - INFO - Started periodic processing
+2022-11-11 10:56:50,513 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:50,564 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:50,564 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:50,565 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:50,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:51,034 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:51,094 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:51,094 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:51,094 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:55,443 - processer - INFO - Started periodic processing
+2022-11-11 10:56:55,511 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:55,569 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:55,569 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:55,570 - processer - INFO - Stopped periodic processing
+2022-11-11 10:56:55,961 - processer - INFO - Started periodic processing
+2022-11-11 10:56:56,026 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:56,086 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 10:56:56,086 - processer - INFO - Telemetry is up to date
+2022-11-11 10:56:56,086 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:06,739 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 11:00:07,276 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 11:00:11,802 - processer - INFO - Started periodic processing
+2022-11-11 11:00:12,112 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:12,163 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:12,163 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:12,163 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:12,334 - processer - INFO - Started periodic processing
+2022-11-11 11:00:12,413 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:12,469 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:12,469 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:12,470 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:16,804 - processer - INFO - Started periodic processing
+2022-11-11 11:00:16,911 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:16,965 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:16,965 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:16,965 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:17,335 - processer - INFO - Started periodic processing
+2022-11-11 11:00:17,391 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:17,448 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:17,448 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:17,448 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:21,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:21,874 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:21,933 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:22,335 - processer - INFO - Started periodic processing
+2022-11-11 11:00:22,406 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 11:00:22,469 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:22,485 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:22,485 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:26,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:26,875 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:26,956 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:26,972 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:26,972 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:27,334 - processer - INFO - Started periodic processing
+2022-11-11 11:00:27,396 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:27,453 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:27,464 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:27,465 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:31,802 - processer - INFO - Started periodic processing
+2022-11-11 11:00:31,870 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:31,925 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:31,937 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:31,937 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:32,333 - processer - INFO - Started periodic processing
+2022-11-11 11:00:32,394 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:32,451 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:32,462 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:32,462 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:36,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:36,879 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:36,935 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:36,946 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:36,946 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:37,334 - processer - INFO - Started periodic processing
+2022-11-11 11:00:37,396 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:37,455 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:37,467 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:37,467 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:41,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:41,870 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:41,925 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:41,981 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:41,981 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:42,333 - processer - INFO - Started periodic processing
+2022-11-11 11:00:42,392 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:42,448 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:42,460 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:42,460 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:46,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:46,871 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:46,923 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:46,978 - processer - INFO - Database updated with latest telemetry
+2022-11-11 11:00:46,978 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:47,333 - processer - INFO - Started periodic processing
+2022-11-11 11:00:47,391 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:47,445 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:47,445 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:47,445 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:51,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:51,865 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:51,918 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:51,919 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:51,919 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:52,333 - processer - INFO - Started periodic processing
+2022-11-11 11:00:52,387 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:52,440 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:52,440 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:52,440 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:56,803 - processer - INFO - Started periodic processing
+2022-11-11 11:00:56,895 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:56,951 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:56,951 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:56,952 - processer - INFO - Stopped periodic processing
+2022-11-11 11:00:57,333 - processer - INFO - Started periodic processing
+2022-11-11 11:00:57,387 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:00:57,442 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:00:57,442 - processer - INFO - Telemetry is up to date
+2022-11-11 11:00:57,442 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:01,802 - processer - INFO - Started periodic processing
+2022-11-11 11:01:01,872 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:01,928 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:01,928 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:01,928 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:02,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:02,393 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:02,453 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:02,453 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:02,453 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:06,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:06,896 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:06,960 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:06,960 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:06,960 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:07,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:07,389 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:07,442 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:07,442 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:07,442 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:11,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:11,881 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:11,934 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:11,934 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:11,934 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:12,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:12,391 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:12,458 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:12,458 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:12,458 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:16,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:16,875 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:16,933 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:16,933 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:16,933 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:17,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:17,421 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:17,484 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:17,484 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:17,484 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:21,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:21,874 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:21,927 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:21,927 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:21,928 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:22,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:22,400 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:22,466 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:22,466 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:22,466 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:26,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:26,872 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:26,926 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:26,926 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:26,926 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:27,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:27,386 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:27,473 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:27,474 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:27,474 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:31,801 - processer - INFO - Started periodic processing
+2022-11-11 11:01:31,853 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:31,906 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:31,906 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:31,906 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:32,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:32,402 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:32,455 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:32,456 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:32,456 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:36,800 - processer - INFO - Started periodic processing
+2022-11-11 11:01:36,854 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:36,904 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:36,904 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:36,904 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:37,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:37,386 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:37,467 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:37,467 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:37,467 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:41,800 - processer - INFO - Started periodic processing
+2022-11-11 11:01:41,859 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:41,914 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:41,914 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:41,915 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:42,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:42,386 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:42,472 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:42,472 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:42,472 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:46,803 - processer - INFO - Started periodic processing
+2022-11-11 11:01:46,874 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:46,935 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:46,935 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:46,936 - processer - INFO - Stopped periodic processing
+2022-11-11 11:01:47,333 - processer - INFO - Started periodic processing
+2022-11-11 11:01:47,385 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 11:01:47,438 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 11:01:47,439 - processer - INFO - Telemetry is up to date
+2022-11-11 11:01:47,439 - processer - INFO - Stopped periodic processing
+2022-11-11 12:09:53,226 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:09:53,781 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:09:58,286 - processer - INFO - Started periodic processing
+2022-11-11 12:09:58,864 - processer - INFO - Started periodic processing
+2022-11-11 12:10:03,288 - processer - INFO - Started periodic processing
+2022-11-11 12:10:03,872 - processer - INFO - Started periodic processing
+2022-11-11 12:10:08,286 - processer - INFO - Started periodic processing
+2022-11-11 12:10:08,865 - processer - INFO - Started periodic processing
+2022-11-11 12:10:13,286 - processer - INFO - Started periodic processing
+2022-11-11 12:10:13,865 - processer - INFO - Started periodic processing
+2022-11-11 12:10:18,285 - processer - INFO - Started periodic processing
+2022-11-11 12:10:18,865 - processer - INFO - Started periodic processing
+2022-11-11 12:10:23,285 - processer - INFO - Started periodic processing
+2022-11-11 12:10:23,865 - processer - INFO - Started periodic processing
+2022-11-11 12:10:28,285 - processer - INFO - Started periodic processing
+2022-11-11 12:10:28,865 - processer - INFO - Started periodic processing
+2022-11-11 12:10:33,285 - processer - INFO - Started periodic processing
+2022-11-11 12:10:33,864 - processer - INFO - Started periodic processing
+2022-11-11 12:10:38,285 - processer - INFO - Started periodic processing
+2022-11-11 12:35:23,154 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:35:23,711 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:35:28,219 - processer - INFO - Started periodic processing
+2022-11-11 12:35:28,495 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:28,566 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:28,566 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:28,567 - processer - INFO - Stopped periodic processing
+2022-11-11 12:35:28,772 - processer - INFO - Started periodic processing
+2022-11-11 12:35:28,854 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:28,908 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:28,908 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:28,908 - processer - INFO - Stopped periodic processing
+2022-11-11 12:35:33,222 - processer - INFO - Started periodic processing
+2022-11-11 12:35:33,284 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:33,342 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:33,342 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:33,342 - processer - INFO - Stopped periodic processing
+2022-11-11 12:35:33,775 - processer - INFO - Started periodic processing
+2022-11-11 12:35:33,831 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:33,886 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:33,887 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:33,887 - processer - INFO - Stopped periodic processing
+2022-11-11 12:35:38,220 - processer - INFO - Started periodic processing
+2022-11-11 12:35:38,279 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:38,337 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:38,338 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:38,338 - processer - INFO - Stopped periodic processing
+2022-11-11 12:35:38,773 - processer - INFO - Started periodic processing
+2022-11-11 12:35:38,837 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:38,900 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:35:38,900 - processer - INFO - Telemetry is up to date
+2022-11-11 12:35:38,907 - processer - INFO - Stopped periodic processing
+2022-11-11 12:37:48,145 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:37:53,217 - processer - INFO - Started periodic processing
+2022-11-11 12:37:53,506 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:37:53,584 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:37:53,585 - processer - INFO - Telemetry is up to date
+2022-11-11 12:37:53,585 - processer - INFO - Stopped periodic processing
+2022-11-11 12:37:58,221 - processer - INFO - Started periodic processing
+2022-11-11 12:37:58,287 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:37:58,352 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:37:58,353 - processer - INFO - Telemetry is up to date
+2022-11-11 12:37:58,353 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:03,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:03,294 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:03,352 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:03,352 - processer - INFO - Telemetry is up to date
+2022-11-11 12:38:03,353 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:08,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:08,290 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:08,357 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:08,358 - processer - INFO - Telemetry is up to date
+2022-11-11 12:38:08,358 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:13,217 - processer - INFO - Started periodic processing
+2022-11-11 12:38:13,281 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:13,350 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:13,350 - processer - INFO - Telemetry is up to date
+2022-11-11 12:38:13,350 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:18,216 - processer - INFO - Started periodic processing
+2022-11-11 12:38:18,295 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:18,353 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:18,353 - processer - INFO - Telemetry is up to date
+2022-11-11 12:38:18,353 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:23,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:23,285 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:23,344 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:38:28,219 - processer - INFO - Started periodic processing
+2022-11-11 12:38:28,285 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 12:38:28,343 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:28,349 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:28,350 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:33,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:33,287 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:33,344 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:33,400 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:33,400 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:38,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:38,294 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:38,352 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:38,409 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:38,410 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:43,219 - processer - INFO - Started periodic processing
+2022-11-11 12:38:43,283 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:43,344 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:43,356 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:43,356 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:48,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:48,286 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:48,346 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:48,358 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:48,358 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:53,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:53,292 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:53,356 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:53,368 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:53,368 - processer - INFO - Stopped periodic processing
+2022-11-11 12:38:58,218 - processer - INFO - Started periodic processing
+2022-11-11 12:38:58,288 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:58,357 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:38:58,361 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:38:58,361 - processer - INFO - Stopped periodic processing
+2022-11-11 12:39:03,218 - processer - INFO - Started periodic processing
+2022-11-11 12:39:03,283 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:03,351 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:03,406 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:39:03,407 - processer - INFO - Stopped periodic processing
+2022-11-11 12:39:08,218 - processer - INFO - Started periodic processing
+2022-11-11 12:39:08,285 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:08,347 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:08,402 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:39:08,402 - processer - INFO - Stopped periodic processing
+2022-11-11 12:39:13,218 - processer - INFO - Started periodic processing
+2022-11-11 12:39:13,290 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:13,360 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:39:13,374 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:39:13,375 - processer - INFO - Stopped periodic processing
+2022-11-11 12:39:18,218 - processer - INFO - Started periodic processing
+2022-11-11 12:39:18,284 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:39:18,341 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:39:18,341 - processer - INFO - Telemetry is up to date
+2022-11-11 12:39:18,341 - processer - INFO - Stopped periodic processing
+2022-11-11 12:39:23,218 - processer - INFO - Started periodic processing
+2022-11-11 12:39:23,290 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:39:23,348 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:39:23,349 - processer - INFO - Telemetry is up to date
+2022-11-11 12:39:23,349 - processer - INFO - Stopped periodic processing
+2022-11-11 12:46:27,964 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 12:46:33,024 - processer - INFO - Started periodic processing
+2022-11-11 12:46:33,345 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:33,414 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:33,414 - processer - INFO - Telemetry is up to date
+2022-11-11 12:46:33,415 - processer - INFO - Stopped periodic processing
+2022-11-11 12:46:38,026 - processer - INFO - Started periodic processing
+2022-11-11 12:46:38,093 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:38,160 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:38,160 - processer - INFO - Telemetry is up to date
+2022-11-11 12:46:38,160 - processer - INFO - Stopped periodic processing
+2022-11-11 12:46:43,025 - processer - INFO - Started periodic processing
+2022-11-11 12:46:43,115 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:43,180 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:43,180 - processer - INFO - Telemetry is up to date
+2022-11-11 12:46:43,181 - processer - INFO - Stopped periodic processing
+2022-11-11 12:46:48,025 - processer - INFO - Started periodic processing
+2022-11-11 12:46:48,086 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:46:48,145 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:46:53,025 - processer - INFO - Started periodic processing
+2022-11-11 12:46:53,090 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 12:46:53,148 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:46:53,205 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:46:53,205 - processer - INFO - Stopped periodic processing
+2022-11-11 12:46:58,025 - processer - INFO - Started periodic processing
+2022-11-11 12:46:58,094 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:46:58,236 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:46:58,290 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:46:58,290 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:03,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:03,092 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:03,206 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:03,264 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:03,264 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:08,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:08,111 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:08,181 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:08,241 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:08,242 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:13,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:13,093 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:13,184 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:13,200 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:13,200 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:18,024 - processer - INFO - Started periodic processing
+2022-11-11 12:47:18,095 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:18,172 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:18,228 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:18,229 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:23,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:23,105 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:23,176 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:23,190 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:23,190 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:28,024 - processer - INFO - Started periodic processing
+2022-11-11 12:47:28,105 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:28,179 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:28,193 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:28,194 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:33,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:33,093 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:33,170 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:33,185 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:33,185 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:38,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:38,093 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:38,165 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:38,224 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:38,225 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:43,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:43,094 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:43,164 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:43,176 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:43,176 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:48,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:48,113 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:48,190 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:48,244 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:48,245 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:53,025 - processer - INFO - Started periodic processing
+2022-11-11 12:47:53,094 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:53,165 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:53,181 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:53,182 - processer - INFO - Stopped periodic processing
+2022-11-11 12:47:58,023 - processer - INFO - Started periodic processing
+2022-11-11 12:47:58,092 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:58,156 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:47:58,171 - processer - INFO - Database updated with latest telemetry
+2022-11-11 12:47:58,171 - processer - INFO - Stopped periodic processing
+2022-11-11 12:48:03,025 - processer - INFO - Started periodic processing
+2022-11-11 12:48:03,118 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:48:03,214 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:48:03,214 - processer - INFO - Telemetry is up to date
+2022-11-11 12:48:03,215 - processer - INFO - Stopped periodic processing
+2022-11-11 12:48:08,025 - processer - INFO - Started periodic processing
+2022-11-11 12:48:08,103 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 12:48:08,171 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 12:48:08,172 - processer - INFO - Telemetry is up to date
+2022-11-11 12:48:08,172 - processer - INFO - Stopped periodic processing
+2022-11-11 13:02:43,849 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 13:02:48,910 - processer - INFO - Started periodic processing
+2022-11-11 13:02:49,200 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:49,263 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:49,263 - processer - INFO - Telemetry is up to date
+2022-11-11 13:02:49,263 - processer - INFO - Stopped periodic processing
+2022-11-11 13:02:53,913 - processer - INFO - Started periodic processing
+2022-11-11 13:02:54,001 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:54,075 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:54,075 - processer - INFO - Telemetry is up to date
+2022-11-11 13:02:54,075 - processer - INFO - Stopped periodic processing
+2022-11-11 13:02:58,910 - processer - INFO - Started periodic processing
+2022-11-11 13:02:58,973 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:59,032 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:02:59,032 - processer - INFO - Telemetry is up to date
+2022-11-11 13:02:59,032 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:03,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:03,977 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:04,044 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:03:04,057 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:04,057 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:08,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:08,972 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:09,032 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:09,087 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:09,087 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:13,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:13,973 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:14,037 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:14,048 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:14,049 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:18,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:18,976 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:19,046 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:19,060 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:19,060 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:23,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:23,987 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:24,053 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:24,070 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:24,070 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:28,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:28,978 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:29,051 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:29,066 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:29,066 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:33,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:33,978 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:34,048 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:34,063 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:34,063 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:38,911 - processer - INFO - Started periodic processing
+2022-11-11 13:03:38,979 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:39,041 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:39,099 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:39,099 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:43,911 - processer - INFO - Started periodic processing
+2022-11-11 13:03:43,977 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:44,047 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:44,106 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:44,106 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:48,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:48,977 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:49,045 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:49,101 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:49,101 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:53,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:53,981 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:54,052 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:03:54,066 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:03:54,067 - processer - INFO - Stopped periodic processing
+2022-11-11 13:03:58,910 - processer - INFO - Started periodic processing
+2022-11-11 13:03:58,978 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:03:59,048 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:03:59,048 - processer - INFO - Telemetry is up to date
+2022-11-11 13:03:59,049 - processer - INFO - Stopped periodic processing
+2022-11-11 13:06:37,936 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 13:06:42,997 - processer - INFO - Started periodic processing
+2022-11-11 13:06:43,341 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:06:43,405 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:06:43,406 - processer - INFO - Telemetry is up to date
+2022-11-11 13:06:43,406 - processer - INFO - Stopped periodic processing
+2022-11-11 13:06:48,000 - processer - INFO - Started periodic processing
+2022-11-11 13:06:48,176 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:06:48,244 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:06:48,244 - processer - INFO - Telemetry is up to date
+2022-11-11 13:06:48,244 - processer - INFO - Stopped periodic processing
+2022-11-11 13:06:52,997 - processer - INFO - Started periodic processing
+2022-11-11 13:06:53,073 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:06:53,165 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:06:53,186 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:06:53,187 - processer - INFO - Stopped periodic processing
+2022-11-11 13:06:57,997 - processer - INFO - Started periodic processing
+2022-11-11 13:06:58,072 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:06:58,169 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 13:06:58,170 - processer - INFO - Telemetry is up to date
+2022-11-11 13:06:58,170 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:02,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:03,071 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:03,131 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 13:07:03,186 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:07:03,186 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:07,997 - processer - INFO - Started periodic processing
+2022-11-11 13:07:08,069 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:08,130 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:08,130 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:08,131 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:12,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:13,063 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:13,127 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:13,138 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:07:13,138 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:17,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:18,063 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:18,126 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:18,126 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:18,126 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:22,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:23,062 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:23,123 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:23,178 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:07:23,178 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:27,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:28,062 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:28,129 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:28,129 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:28,130 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:32,998 - processer - INFO - Started periodic processing
+2022-11-11 13:07:33,074 - processer - INFO - Response received from database. Status code: 200, content: 2
+2022-11-11 13:07:33,141 - processer - INFO - Response received from database. Status code: 200, content: 3
+2022-11-11 13:07:33,157 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:07:33,157 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:37,996 - processer - INFO - Started periodic processing
+2022-11-11 13:07:38,096 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:07:38,161 - processer - INFO - Response received from database. Status code: 200, content: 1
+2022-11-11 13:07:38,176 - processer - INFO - Database updated with latest telemetry
+2022-11-11 13:07:38,176 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:42,997 - processer - INFO - Started periodic processing
+2022-11-11 13:07:43,070 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:43,134 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:43,134 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:43,135 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:47,997 - processer - INFO - Started periodic processing
+2022-11-11 13:07:48,065 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:48,154 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:48,154 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:48,155 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:52,996 - processer - INFO - Started periodic processing
+2022-11-11 13:07:53,059 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:53,156 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:53,156 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:53,156 - processer - INFO - Stopped periodic processing
+2022-11-11 13:07:57,997 - processer - INFO - Started periodic processing
+2022-11-11 13:07:58,062 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:58,132 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:07:58,132 - processer - INFO - Telemetry is up to date
+2022-11-11 13:07:58,132 - processer - INFO - Stopped periodic processing
+2022-11-11 13:08:02,996 - processer - INFO - Started periodic processing
+2022-11-11 13:08:03,058 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:08:03,118 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:08:03,118 - processer - INFO - Telemetry is up to date
+2022-11-11 13:08:03,119 - processer - INFO - Stopped periodic processing
+2022-11-11 13:13:48,981 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 13:13:54,042 - processer - INFO - Started periodic processing
+2022-11-11 13:13:54,374 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:13:54,471 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:13:54,471 - processer - INFO - Telemetry is up to date
+2022-11-11 13:13:54,471 - processer - INFO - Stopped periodic processing
+2022-11-11 13:13:59,046 - processer - INFO - Started periodic processing
+2022-11-11 13:13:59,104 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:13:59,192 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:13:59,192 - processer - INFO - Telemetry is up to date
+2022-11-11 13:13:59,193 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:04,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:04,106 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:04,188 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:04,188 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:04,188 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:09,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:09,100 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:09,197 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:09,197 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:09,198 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:14,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:14,111 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:14,169 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:14,170 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:14,170 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:19,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:19,115 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:19,177 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:19,178 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:19,178 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:24,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:24,104 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:24,168 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:24,168 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:24,168 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:29,041 - processer - INFO - Started periodic processing
+2022-11-11 13:14:29,101 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:29,157 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:29,158 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:29,158 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:34,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:34,117 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:34,175 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:34,175 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:34,175 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:39,043 - processer - INFO - Started periodic processing
+2022-11-11 13:14:39,128 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:39,186 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:39,186 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:39,187 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:44,041 - processer - INFO - Started periodic processing
+2022-11-11 13:14:44,124 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:44,187 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:44,187 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:44,187 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:49,042 - processer - INFO - Started periodic processing
+2022-11-11 13:14:49,145 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:49,211 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:49,211 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:49,211 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:54,041 - processer - INFO - Started periodic processing
+2022-11-11 13:14:54,100 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:54,197 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:54,198 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:54,198 - processer - INFO - Stopped periodic processing
+2022-11-11 13:14:59,040 - processer - INFO - Started periodic processing
+2022-11-11 13:14:59,107 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:59,201 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:14:59,201 - processer - INFO - Telemetry is up to date
+2022-11-11 13:14:59,201 - processer - INFO - Stopped periodic processing
+2022-11-11 13:15:04,042 - processer - INFO - Started periodic processing
+2022-11-11 13:15:04,119 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:15:04,227 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:15:04,228 - processer - INFO - Telemetry is up to date
+2022-11-11 13:15:04,228 - processer - INFO - Stopped periodic processing
+2022-11-11 13:16:42,375 - processer - INFO - Connected to server at http://localhost:8090 - 204
+2022-11-11 13:16:47,441 - processer - INFO - Started periodic processing
+2022-11-11 13:16:47,521 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:47,580 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:47,581 - processer - INFO - Telemetry is up to date
+2022-11-11 13:16:47,581 - processer - INFO - Stopped periodic processing
+2022-11-11 13:16:52,442 - processer - INFO - Started periodic processing
+2022-11-11 13:16:52,506 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:52,566 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:52,567 - processer - INFO - Telemetry is up to date
+2022-11-11 13:16:52,567 - processer - INFO - Stopped periodic processing
+2022-11-11 13:16:57,438 - processer - INFO - Started periodic processing
+2022-11-11 13:16:57,492 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:57,544 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:16:57,544 - processer - INFO - Telemetry is up to date
+2022-11-11 13:16:57,544 - processer - INFO - Stopped periodic processing
+2022-11-11 13:17:02,438 - processer - INFO - Started periodic processing
+2022-11-11 13:17:02,500 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:17:02,568 - processer - INFO - Response received from database. Status code: 200, content: 0
+2022-11-11 13:17:02,568 - processer - INFO - Telemetry is up to date
+2022-11-11 13:17:02,568 - processer - INFO - Stopped periodic processing
+2022-11-11 15:37:23,716 - processer - WARNING - Unable to connect to server. Error: HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5d12352020>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-11-11 15:37:25,723 - processer - WARNING - Unable to connect to server. Error: HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5d12352650>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-11-11 15:37:27,731 - processer - WARNING - Unable to connect to server. Error: HTTPConnectionPool(host='localhost', port=8090): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5d12352740>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2022-11-11 15:37:29,733 - processer - ERROR - Unable to connect to server at http://localhost:8090. Max retries exceeded

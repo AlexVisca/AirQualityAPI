@@ -23,23 +23,23 @@ paths:
           description: 'Connection successful'
 
   /temperature:
-    post:
-      tags:
-        - Measurements
-      summary: reports a temperature reading
-      operationId: app.temperature
-      description: Adds a new temperature reading to the system
-      responses:
-        '201':
-          description: item created
-        '400':
-          description: 'invalid data, object'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TemperatureReading'
-        description: Reading item to add
+    # post:
+    #   tags:
+    #     - Measurements
+    #   summary: reports a temperature reading
+    #   operationId: app.temperature
+    #   description: Adds a new temperature reading to the system
+    #   responses:
+    #     '201':
+    #       description: item created
+    #     '400':
+    #       description: 'invalid data, object'
+    #   requestBody:
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/TemperatureReading'
+    #     description: Reading item to add
     get:
       tags:
         - Measurements
@@ -74,23 +74,23 @@ paths:
                     type: string
 
   /environment:
-    post:
-      tags:
-        - Measurements
-      summary: reports a environment reading
-      operationId: app.environment
-      description: Adds a new environment reading to the system
-      responses:
-        '201':
-          description: item created
-        '400':
-          description: 'invalid data, object'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/EnvironmentReading'
-        description: Reading item to add
+    # post:
+    #   tags:
+    #     - Measurements
+    #   summary: reports a environment reading
+    #   operationId: app.environment
+    #   description: Adds a new environment reading to the system
+    #   responses:
+    #     '201':
+    #       description: item created
+    #     '400':
+    #       description: 'invalid data, object'
+    #   requestBody:
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/EnvironmentReading'
+    #     description: Reading item to add
     get:
       tags:
         - Measurements

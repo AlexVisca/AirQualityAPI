@@ -1,0 +1,2 @@
+DELETE FROM Stats;
+VACUUM;

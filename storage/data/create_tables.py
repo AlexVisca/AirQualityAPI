@@ -2,7 +2,7 @@ import mysql.connector
 
 
 conn = mysql.connector.connect(
-    host="api.lxvdev.xyz", 
+    host="ec2-35-93-78-123.us-west-2.compute.amazonaws.com", 
     port=3306, 
     user="storage", 
     password="store", 
