@@ -4,7 +4,7 @@ info:
   title: OpenAtmos - OpenAPI 3.0
   description: |-
     This is an air quality monitoring API that meets OpenAPI 3.0 specification.
-    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5/sub>.
+    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5</sub>.
   contact:
     email: dev@openatmos.com
   license:

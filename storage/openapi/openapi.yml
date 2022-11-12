@@ -4,7 +4,7 @@ info:
   title: OpenAtmos - OpenAPI 3.0
   description: |-
     This is an air quality monitoring API that meets OpenAPI 3.0 specification.
-    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5/sub>.
+    The API receives environmental data from IoT sensors that measures data on ambient temperature, CO<sub>2</sub>, and PM<sub>2.5</sub>.
   contact:
     email: dev@openatmos.com
   license:
@@ -23,23 +23,6 @@ paths:
           description: 'Connection successful'
 
   /temperature:
-    # post:
-    #   tags:
-    #     - Measurements
-    #   summary: reports a temperature reading
-    #   operationId: app.temperature
-    #   description: Adds a new temperature reading to the system
-    #   responses:
-    #     '201':
-    #       description: item created
-    #     '400':
-    #       description: 'invalid data, object'
-    #   requestBody:
-    #     content:
-    #       application/json:
-    #         schema:
-    #           $ref: '#/components/schemas/TemperatureReading'
-    #     description: Reading item to add
     get:
       tags:
         - Measurements
@@ -74,23 +57,6 @@ paths:
                     type: string
 
   /environment:
-    # post:
-    #   tags:
-    #     - Measurements
-    #   summary: reports a environment reading
-    #   operationId: app.environment
-    #   description: Adds a new environment reading to the system
-    #   responses:
-    #     '201':
-    #       description: item created
-    #     '400':
-    #       description: 'invalid data, object'
-    #   requestBody:
-    #     content:
-    #       application/json:
-    #         schema:
-    #           $ref: '#/components/schemas/EnvironmentReading'
-    #     description: Reading item to add
     get:
       tags:
         - Measurements

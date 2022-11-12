@@ -121,7 +121,8 @@ def process_messages():
     consumer = topic.get_simple_consumer(
         consumer_group=b'telemetry', 
         auto_offset_reset=OffsetType.LATEST, 
-        reset_offset_on_start=False)
+        reset_offset_on_start=False
+    )
     
     try:
         for msg in consumer:
@@ -171,9 +172,7 @@ def main() -> None:
     t1 = Thread(target=process_messages)
     t1.daemon
     t1.start()
-    app.run(
-        port=8090, 
-        debug=False)
+    app.run(port=8090, debug=False)
 
 
 if __name__ == '__main__':

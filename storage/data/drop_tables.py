@@ -2,7 +2,7 @@ import mysql.connector
 
 
 conn = mysql.connector.connect(
-    host="api.lxvdev.xyz", 
+    host="api-lxvdev.westus3.cloudapp.azure.com", 
     port=3306, 
     user="storage", 
     password="store", 
