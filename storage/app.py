@@ -1,19 +1,31 @@
+# Copyright 2020 - 2023 Alexander Visca. All rights reserved
+"""
+Storage Service
+
+Receives sensor telemetry from message broker service.
+Stores telemetry data in a MySQL database service.
+
+Environment configuration
+SERVER_HOST (string):   URL of message broker service
+SERVER_PORT (integer):  port for message broker service
+DATA_TOPIC (string):    topic group assigned to data
+"""
 import connexion
+import logging
+import logging.config
+import json
+import time
+import yaml
 from connexion import NoContent
+from data.base import Base
+from data.readings import Temperature, Environment
+from datetime import datetime
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from threading import Thread
-from data.base import Base
-from data.readings import Temperature, Environment
-from datetime import datetime
-import json
-import time
-import yaml
-import logging
-import logging.config
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
@@ -45,7 +57,7 @@ with open('config/app_conf.yml', mode='r') as file:
 
 SERVER_HOST = app_config['server']['host']
 SERVER_PORT = app_config['server']['port']
-SERVER_URI = app_config['events']['topic']
+DATA_TOPIC = app_config['events']['topic']
 
 # Endpoints
 def root() -> None:
@@ -149,7 +161,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
     while count < max_retries:
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
-            topic = client.topics[str.encode(SERVER_URI)]
+            topic = client.topics[str.encode(DATA_TOPIC)]
 
             return topic
 

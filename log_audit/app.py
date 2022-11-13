@@ -1,14 +1,26 @@
+# Copyright 2020 - 2023 Alexander Visca. All rights reserved
+"""
+Audit Service
+
+Queries messages in queue from message broker service and
+forwards messages to a user interface service.
+
+Environment configuration
+SERVER_HOST (string):   URL of message broker service
+SERVER_PORT (integer):  port for message broker service
+DATA_TOPIC (string):    topic group assigned to data
+"""
 import connexion
-from connexion import NoContent
-from pykafka import KafkaClient
-from pykafka.common import OffsetType
-from pykafka.exceptions import KafkaException, SocketDisconnectedError
+import logging
+import logging.config
 import json
 import requests
 import time
 import yaml
-import logging
-import logging.config
+from connexion import NoContent
+from pykafka import KafkaClient
+from pykafka.common import OffsetType
+from pykafka.exceptions import KafkaException, SocketDisconnectedError
 
 
 # Logging config
@@ -24,7 +36,7 @@ with open('config/app_conf.yml', mode='r') as file:
 
 SERVER_HOST = app_config['server']['host']
 SERVER_PORT = app_config['server']['port']
-SERVER_URI = app_config['events']['topic']
+DATA_TOPIC = app_config['events']['topic']
 
 # endpoints
 def get_temperature(index):
@@ -105,7 +117,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
     while count < max_retries:
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
-            topic = client.topics[str.encode(SERVER_URI)]
+            topic = client.topics[str.encode(DATA_TOPIC)]
 
             return topic
 

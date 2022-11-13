@@ -1,13 +1,25 @@
+# Copyright 2020 - 2023 Alexander Visca. All rights reserved
+"""
+Receiver Service
+
+Receives sensor telemetry from devices over HTTP as post resquests.
+Forwards telemetry to a message broker service.
+
+Environment configuration
+SERVER_HOST (string):   URL of message broker service
+SERVER_PORT (integer):  port for message broker service
+DATA_TOPIC (string):    topic group assigned to data
+"""
 import connexion
-from connexion import NoContent
-from pykafka import KafkaClient
-from pykafka.exceptions import KafkaException, SocketDisconnectedError, LeaderNotAvailable
-from datetime import datetime
+import logging
+import logging.config
 import json
 import time
 import yaml
-import logging
-import logging.config
+from connexion import NoContent
+from datetime import datetime
+from pykafka import KafkaClient
+from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
@@ -24,7 +36,7 @@ with open('config/app_conf.yml', mode='r') as file:
 
 SERVER_HOST = app_config['server']['host']
 SERVER_PORT = app_config['server']['port']
-SERVER_URI = app_config['events']['topic']
+DATA_TOPIC = app_config['events']['topic']
 
 # Endpoints
 def root():
@@ -77,11 +89,11 @@ def create_kafka_connection(max_retries: int, timeout: int):
     while count < max_retries:
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
-            topic = client.topics[str.encode(SERVER_URI)]
+            topic = client.topics[str.encode(DATA_TOPIC)]
 
             return topic
 
-        except KafkaException as e:
+        except pykafka.exceptions.KafkaException as e:
             logger.error(f"Connection failed - {e}")
             time.sleep(timeout)
             count += 1

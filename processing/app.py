@@ -1,19 +1,30 @@
+# Copyright 2020 - 2023 Alexander Visca. All rights reserved
+"""
+Processing Service
+
+Receives sensor telemetry data from storage service. 
+Processes data for statistical analysis and 
+forwards to a user interface service.
+
+Environment configuration
+SERVER_URL (string):    URL of storage service
+INTERVAL (integer):     Interval (seconds) between requesting data
+TIMEOUT (integer):      Timeout (seconds) to wait for response
+"""
 import connexion
-from connexion import NoContent
-from apscheduler.schedulers.background import BackgroundScheduler
-
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from data.base import Base
-from data.stats import Stats
-
-from datetime import datetime
-import requests
-import json
-import time
-import yaml
 import logging
 import logging.config
+import json
+import requests
+import time
+import yaml
+from apscheduler.schedulers.background import BackgroundScheduler
+from connexion import NoContent
+from data.base import Base
+from data.stats import Stats
+from datetime import datetime
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
@@ -47,7 +58,7 @@ def get_stats() -> dict:
     }
     return stats, 200
 
-
+# processor logic
 def populate_stats() -> None:
     logger.info("Started periodic processing")
     # read in stats from sqlite db
