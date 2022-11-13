@@ -114,7 +114,7 @@ def environment(body) -> None:
     
     return NoContent, 201
 
-
+# message processor
 def process_messages():
     topic = create_kafka_connection(max_retries=3, timeout=2)
 

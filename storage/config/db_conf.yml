@@ -2,6 +2,6 @@ version: 1
 datastore:
   username: storage
   password: store
-  host: api-lxvdev.westus3.cloudapp.azure.com
+  host: 20.106.90.66
   port: 3306
   db: telemetry

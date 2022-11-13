@@ -95,11 +95,11 @@ components:
     TemperatureReading:
       type: object
       required:
-      - trace_id
-      - device_id
-      - location
-      - timestamp
-      - temperature
+        - trace_id
+        - device_id
+        - location
+        - timestamp
+        - temperature
       properties:
         trace_id:
           type: string
@@ -126,11 +126,11 @@ components:
     EnvironmentReading:
       type: object
       required:
-      - trace_id
-      - device_id
-      - location
-      - timestamp
-      - environment
+        - trace_id
+        - device_id
+        - location
+        - timestamp
+        - environment
       properties:
         trace_id:
           type: string

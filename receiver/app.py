@@ -31,18 +31,11 @@ def root():
     return NoContent, 204
 
 def temperature(body):
-    payload = {
-        'device_id': body['device_id'], 
-        'location': body['location'], 
-        'temperature': body['temperature'], 
-        'timestamp': body['timestamp'], 
-        'trace_id': body['trace_id']
-    }
     # convert payload for kafka
     msg = {
         'type': 'temperature', 
         'datetime': datetime.now().strftime(DATETIME_FORMAT), 
-        'payload': payload
+        'payload': body
     }
     msg_str = json.dumps(msg)
     
@@ -59,21 +52,11 @@ def temperature(body):
 
 
 def environment(body):
-    payload = {
-        'device_id': body['device_id'], 
-        'environment': {
-            'co_2': body['environment']['co_2'], 
-            'pm2_5': body['environment']['pm2_5'], 
-        }, 
-        'location': body['location'], 
-        'timestamp': body['timestamp'], 
-        'trace_id': body['trace_id']
-    }
     # convert payload for kafka
     msg = {
         'type': 'environment', 
         'datetime': datetime.now().strftime(DATETIME_FORMAT), 
-        'payload': payload
+        'payload': body
     }
     msg_str = json.dumps(msg)
 

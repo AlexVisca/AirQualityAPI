@@ -46,11 +46,11 @@ components:
     EnvironmentStats:
       type: object
       required:
-      - max_temp
-      - min_temp
-      - avg_temp
-      - max_pm2_5
-      - max_co_2
+        - max_temp
+        - min_temp
+        - avg_temp
+        - max_pm2_5
+        - max_co_2
       properties:
         max_temp:
           type: number
