@@ -1,12 +1,68 @@
----
 version: '3'
 services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181"
+    hostname: zookeeper
+  kafka:
+    image: wurstmeister/kafka
+    command: [start-kafka.sh]
+    ports:
+      - "9092:9092"
+    hostname: kafka
+    environment:
+      KAFKA_CREATE_TOPICS: "telemetry:1:1" # topic:partition:replicas
+      KAFKA_ADVERTISED_HOST_NAME: api-lxvdev.westus3.cloudapp.azure.com # docker-machine ip
+      KAFKA_LISTENERS: INSIDE://:29092,OUTSIDE://:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:29092,OUTSIDE://api-lxvdev.westus3.cloudapp.azure.com:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - "zookeeper"
+  db:
+    image: mysql:8
+    restart: always
+    volumes:
+      - my-db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: 'telemetry'
+      MYSQL_USER: 'storage'
+      MYSQL_PASSWORD: store
+      MYSQL_ROOT_PASSWORD: rootbeer
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+
+  storage:
+    build: 
+      context: ../storage
+    image: storage:latest
+    environment:
+      SERVER_HOST: http://localhost
+      SERVER_PORT: 9092
+      DATA_TOPIC: 'telemetry'
+      DB_HOST: http://localhost
+      DB_PORT: 3306
+      DB_NAME: telemetry
+      DB_USERNAME: storage
+      DB_PASSWORD: store
+    ports:
+      - '8090:8090'
+    depends_on:
+      - "kafka"
+      - "db"
+
   receiver:
     build: 
       context: ../receiver
     image: receiver:latest
     environment:
-      SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
+      SERVER_HOST: http://localhost
       SERVER_PORT: 9092
       DATA_TOPIC: 'telemetry'
     ports:
@@ -14,28 +70,9 @@ services:
     expose:
       - '8080'
     depends_on:
-      # - "kafka"
+      - "kafka"
       - "storage"
   
-  storage:
-    build: 
-      context: ../storage
-    image: storage:latest
-    environment:
-      SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
-      SERVER_PORT: 9092
-      DATA_TOPIC: 'telemetry'
-      DB_HOST: api-lxvdev.westus3.cloudapp.azure.com
-      DB_PORT: 3306
-      DB_NAME: telemetry
-      DB_USERNAME: storage
-      DB_PASSWORD: store
-    ports:
-      - '8090:8090'
-    # depends_on:
-      # - "kafka"
-      # - "db"
-
   processing:
     build: 
       context: ../processing
@@ -45,6 +82,7 @@ services:
     ports:
       - '8100:8100'
     depends_on:
+      - "db"
       - "storage"
 
   auditlog:
@@ -52,9 +90,13 @@ services:
       context: ../log_audit
     image: auditlog:latest
     environment:
-      SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
+      SERVER_HOST: http://localhost
       SERVER_PORT: 9092
       DATA_TOPIC: 'telemetry'
     ports:
       - '8110:8110'
-    
+    depends_on:
+      - "kafka"
+
+volumes:
+  my-db:
