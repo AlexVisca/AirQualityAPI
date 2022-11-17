@@ -108,6 +108,7 @@ def temperature(body) -> None:
 
     session.close()
     logger.info(f"Received temperature telemetry -- trace ID: {body['trace_id']}")
+    return NoContent, 201
 
 def environment(body) -> None:
     session = DB_SESSION()
@@ -124,6 +125,7 @@ def environment(body) -> None:
 
     session.close()
     logger.info(f"Received environment telemetry -- trace ID: {body['trace_id']}")
+    return NoContent, 201
 
 # message processor
 def process_messages():

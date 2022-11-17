@@ -1,10 +1,10 @@
 ---
 version: '3'
-  
 services:
   receiver:
     build: 
       context: ../receiver
+    image: receiver:latest
     environment:
       SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
       SERVER_PORT: 9092
@@ -20,6 +20,7 @@ services:
   storage:
     build: 
       context: ../storage
+    image: storage:latest
     environment:
       SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
       SERVER_PORT: 9092
@@ -38,8 +39,9 @@ services:
   processing:
     build: 
       context: ../processing
+    image: processing:latest
     environment:
-      SERVER_URL: http://localhost:8090
+      SERVER_URL: http://storage:8090
     ports:
       - '8100:8100'
     depends_on:
@@ -48,6 +50,7 @@ services:
   auditlog:
     build: 
       context: ../log_audit
+    image: auditlog:latest
     environment:
       SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
       SERVER_PORT: 9092

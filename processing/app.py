@@ -23,6 +23,7 @@ from connexion import NoContent
 from data.base import Base
 from data.stats import Stats
 from datetime import datetime
+from os import getenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -42,7 +43,7 @@ DB_ENGINE = create_engine(f"sqlite:///{app_config['datastore']['filename']}")
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
-SERVER_URL: str = app_config['eventstore']['url']
+SERVER_URL: str = getenv('SERVER_URL', default=app_config['eventstore']['url'])
 INTERVAL: int = app_config['scheduler']['period_sec']
 TIMEOUT: int = app_config['connection']['timeout']
 
