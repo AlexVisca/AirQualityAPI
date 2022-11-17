@@ -191,11 +191,11 @@ def create_connection(url: str, timeout: int) -> None:
         
         except requests.exceptions.RequestException as e:
             logger.error(e)
-            raise SystemExit
+            raise SystemExit(1)
     
     else:
-        logger.error(f"Unable to connect to server at {url}. Max retries exceeded")
-        raise SystemExit
+        logger.error(f"Unable to connect to server at {url}. Max retries exceeded ({retries})")
+        raise SystemExit(1)
 
 def init_scheduler() -> None:
     sched = BackgroundScheduler(daemon=True)

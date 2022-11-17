@@ -18,6 +18,7 @@ import requests
 import time
 import yaml
 from connexion import NoContent
+from os import getenv
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
@@ -34,9 +35,9 @@ logger = logging.getLogger('auditlog')
 with open('config/app_conf.yml', mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
-SERVER_HOST = app_config['server']['host']
-SERVER_PORT = app_config['server']['port']
-DATA_TOPIC = app_config['events']['topic']
+SERVER_HOST = getenv('SERVER_HOST', default=app_config['server']['host'])
+SERVER_PORT = getenv('SERVER_PORT', default=app_config['server']['port'])
+DATA_TOPIC = getenv('DATA_TOPIC', default=app_config['events']['topic'])
 
 # endpoints
 def get_temperature(index):
@@ -128,8 +129,8 @@ def create_kafka_connection(max_retries: int, timeout: int):
             continue
 
     else:
-        logger.error(f"Connection failed - Unable to connect to kafka server. Max retries exceeded")
-        raise SystemExit
+        logger.error(f"Connection failed - Unable to connect to kafka server. Max retries exceeded ({max_retries})")
+        raise SystemExit(1)
 
 topic = create_kafka_connection(max_retries=3, timeout=2)
 

@@ -20,6 +20,7 @@ from connexion import NoContent
 from data.base import Base
 from data.readings import Temperature, Environment
 from datetime import datetime
+from os import getenv
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
@@ -55,9 +56,9 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 with open('config/app_conf.yml', mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
-SERVER_HOST = app_config['server']['host']
-SERVER_PORT = app_config['server']['port']
-DATA_TOPIC = app_config['events']['topic']
+SERVER_HOST = getenv('SERVER_HOST', default=app_config['server']['host'])
+SERVER_PORT = getenv('SERVER_PORT', default=app_config['server']['port'])
+DATA_TOPIC = getenv('DATA_TOPIC', default=app_config['events']['topic'])
 
 # Endpoints
 def root() -> None:
@@ -106,8 +107,7 @@ def temperature(body) -> None:
     session.commit()
 
     session.close()
-    
-    return NoContent, 201
+    logger.info(f"Received temperature telemetry -- trace ID: {body['trace_id']}")
 
 def environment(body) -> None:
     session = DB_SESSION()
@@ -123,8 +123,7 @@ def environment(body) -> None:
     session.commit()
 
     session.close()
-    
-    return NoContent, 201
+    logger.info(f"Received environment telemetry -- trace ID: {body['trace_id']}")
 
 # message processor
 def process_messages():
@@ -144,11 +143,10 @@ def process_messages():
             payload = msg['payload']
             if msg['type'] == 'temperature':
                 temperature(payload)
-                logger.info("stored temperature telemetry")
+                
             if msg['type'] == 'environment':
                 environment(payload)
-                logger.info("stored environment telemetry")
-
+                
             consumer.commit_offsets()
 
     except SocketDisconnectedError as e:
@@ -172,8 +170,8 @@ def create_kafka_connection(max_retries: int, timeout: int):
             continue
 
     else:
-        logger.error(f"Connection failed - Unable to connect to kafka server. Max retries exceeded")
-        raise SystemExit
+        logger.error(f"Connection failed - Unable to connect to kafka server. Max retries exceeded ({max_retries})")
+        raise SystemExit(1)
 
 
 
