@@ -1,10 +1,14 @@
 version: '3'
 services:
+
   zookeeper:
     image: wurstmeister/zookeeper
     ports:
       - "2181"
     hostname: zookeeper
+    volumes:
+      - /home/api-dev/zookeeper/data:/opt/zookeeper-3.4.13/data
+
   kafka:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
@@ -19,20 +23,24 @@ services:
       KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:29092,OUTSIDE://api-lxvdev.westus3.cloudapp.azure.com:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LOG_DIRS: /kafka/kafka-logs
+      KAFKA_BROKER_ID: 1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /home/api-dev/kafka:/kafka/kafka-logs
     depends_on:
       - "zookeeper"
+
   db:
     image: mysql:8
     restart: always
-    volumes:
-      - my-db:/var/lib/mysql
     environment:
       MYSQL_DATABASE: 'telemetry'
       MYSQL_USER: 'storage'
       MYSQL_PASSWORD: store
       MYSQL_ROOT_PASSWORD: rootbeer
+    volumes:
+      - mysql:/var/lib/mysql
     ports:
       - '3306:3306'
     expose:
@@ -51,6 +59,9 @@ services:
       DB_NAME: telemetry
       DB_USERNAME: storage
       DB_PASSWORD: store
+    volumes:
+      - /home/api-dev/config/storage:/config
+      - /home/api-dev/logs:/logs
     ports:
       - '8090:8090'
     depends_on:
@@ -65,6 +76,9 @@ services:
       SERVER_HOST: http://localhost
       SERVER_PORT: 9092
       DATA_TOPIC: 'telemetry'
+    volumes:
+      - /home/api-dev/config/receiver:/config
+      - /home/api-dev/logs:/logs
     ports:
       - '8080:8080'
     expose:
@@ -79,6 +93,10 @@ services:
     image: processing:latest
     environment:
       SERVER_URL: http://storage:8090
+    volumes:
+      - /home/api-dev/config/processing:/config
+      - /home/api-dev/logs:/logs
+      - stats:/data
     ports:
       - '8100:8100'
     depends_on:
@@ -93,10 +111,14 @@ services:
       SERVER_HOST: http://localhost
       SERVER_PORT: 9092
       DATA_TOPIC: 'telemetry'
+    volumes:
+      - /home/api-dev/config/audit_log:/config
+      - /home/api-dev/logs:/logs
     ports:
       - '8110:8110'
     depends_on:
       - "kafka"
 
 volumes:
-  my-db:
+  mysql:
+  stats:

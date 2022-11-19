@@ -20,32 +20,44 @@ import time
 import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 from connexion import NoContent
-from data.base import Base
-from data.stats import Stats
 from datetime import datetime
-from os import getenv
+from os import environ
+from base import Base
+from stats import Stats
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+
+# Environment config
+if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'pro':
+    app_conf_file = 'config/app_conf.yml'
+    log_conf_file = 'config/log_conf.yml'
+else:
+    app_conf_file = 'app_conf.yml'
+    log_conf_file = 'log_conf.yml'
+
 # Logging config
-with open('config/log_conf.yml', mode='r') as file:
+with open(log_conf_file, mode='r') as file:
     log_config = yaml.safe_load(file.read())
     logging.config.dictConfig(log_config)
 
-logger = logging.getLogger('processer')
-# App config
-with open('config/app_conf.yml', mode='r') as file:
+logger = logging.getLogger('processor')
+
+# application config
+with open(app_conf_file, mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
-DB_ENGINE = create_engine(f"sqlite:///{app_config['datastore']['filename']}")
+SERVER_URL = app_config['eventstore']['url']
+INTERVAL = app_config['scheduler']['period_sec']
+TIMEOUT = app_config['connection']['timeout']
+
+DB_ENGINE = create_engine(
+    f"sqlite:///{app_config['datastore']['filename']}"
+    )
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
-
-SERVER_URL: str = getenv('SERVER_URL', default=app_config['eventstore']['url'])
-INTERVAL: int = app_config['scheduler']['period_sec']
-TIMEOUT: int = app_config['connection']['timeout']
 
 # Endpoints
 def get_stats() -> dict:

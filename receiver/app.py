@@ -18,26 +18,35 @@ import time
 import yaml
 from connexion import NoContent
 from datetime import datetime
-from os import getenv
+from os import environ
 from pykafka import KafkaClient
-from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable
+from pykafka.exceptions import SocketDisconnectedError, LeaderNotAvailable, KafkaException
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
-# Logging config variables
-with open('config/log_conf.yml', mode='r') as file:
+
+# Environment config
+if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'pro':
+    app_conf_file = 'config/app_conf.yml'
+    log_conf_file = 'config/log_conf.yml'
+else:
+    app_conf_file = 'app_conf.yml'
+    log_conf_file = 'log_conf.yml'
+
+# Logging config
+with open(log_conf_file, mode='r') as file:
     log_config = yaml.safe_load(file.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('receiver')
 
-# App config variables
-with open('config/app_conf.yml', mode='r') as file:
+# application config
+with open(app_conf_file, mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
-SERVER_HOST = getenv('SERVER_HOST', default=app_config['server']['host'])
-SERVER_PORT = getenv('SERVER_PORT', default=app_config['server']['port'])
-DATA_TOPIC = getenv('DATA_TOPIC', default=app_config['events']['topic'])
+SERVER_HOST = app_config['server']['host']
+SERVER_PORT = app_config['server']['port']
+DATA_TOPIC = app_config['events']['topic']
 
 # Endpoints
 def root():
@@ -94,7 +103,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
 
             return topic
 
-        except pykafka.exceptions.KafkaException as e:
+        except KafkaException as e:
             logger.error(f"Connection failed - {e}")
             time.sleep(timeout)
             count += 1

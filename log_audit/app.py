@@ -18,26 +18,33 @@ import requests
 import time
 import yaml
 from connexion import NoContent
-from os import getenv
+from os import environ
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
 
+# Environment config
+if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'pro':
+    app_conf_file = 'config/app_conf.yml'
+    log_conf_file = 'config/log_conf.yml'
+else:
+    app_conf_file = 'app_conf.yml'
+    log_conf_file = 'log_conf.yml'
 
 # Logging config
-with open('config/log_conf.yml', mode='r') as file:
+with open(log_conf_file, mode='r') as file:
     log_config = yaml.safe_load(file.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('auditlog')
 
 # application config
-with open('config/app_conf.yml', mode='r') as file:
+with open(app_conf_file, mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
-SERVER_HOST = getenv('SERVER_HOST', default=app_config['server']['host'])
-SERVER_PORT = getenv('SERVER_PORT', default=app_config['server']['port'])
-DATA_TOPIC = getenv('DATA_TOPIC', default=app_config['events']['topic'])
+SERVER_HOST = app_config['server']['host']
+SERVER_PORT = app_config['server']['port']
+DATA_TOPIC = app_config['events']['topic']
 
 # endpoints
 def get_temperature(index):

@@ -12,9 +12,9 @@ handlers:
     class: logging.FileHandler
     level: DEBUG
     formatter: simple
-    filename: logs/app.log
+    filename: app_receiver.log
 loggers:
-  processer:
+  receiver:
     level: DEBUG
     handlers: [console, file]
     propagate: no

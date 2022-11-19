@@ -1,6 +1,6 @@
 version: 1
 server:
-  host: api-lxvdev.westus3.cloudapp.azure.com
+  host: 127.0.0.1
   port: 9092
 events:
   topic: telemetry

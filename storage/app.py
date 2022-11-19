@@ -20,7 +20,7 @@ from connexion import NoContent
 from data.base import Base
 from data.readings import Temperature, Environment
 from datetime import datetime
-from os import getenv
+from os import environ
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
@@ -30,35 +30,40 @@ from threading import Thread
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+
+# Environment config
+if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'pro':
+    app_conf_file = 'config/app_conf.yml'
+    log_conf_file = 'config/log_conf.yml'
+else:
+    app_conf_file = 'app_conf.yml'
+    log_conf_file = 'log_conf.yml'
+
 # Logging config
-with open('config/log_conf.yml', mode='r') as file:
+with open(log_conf_file, mode='r') as file:
     log_config = yaml.safe_load(file.read())
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('database')
-# Database config
-with open('config/db_conf.yml', mode='r') as file:
-    db_config = yaml.safe_load(file.read())
+
+# application config
+with open(app_conf_file, mode='r') as file:
+    app_config = yaml.safe_load(file.read())
+
+SERVER_HOST = app_config['server']['host']
+SERVER_PORT = app_config['server']['port']
+DATA_TOPIC = app_config['events']['topic']
 
 DB_ENGINE = create_engine(
     f"mysql+pymysql://" +
-    f"{db_config['datastore']['username']}:" +
-    f"{db_config['datastore']['password']}@" +
-    f"{db_config['datastore']['host']}:" +
-    f"{db_config['datastore']['port']}/" +
-    f"{db_config['datastore']['db']}"
+    f"{app_config['datastore']['username']}:" +
+    f"{app_config['datastore']['password']}@" +
+    f"{app_config['datastore']['host']}:" +
+    f"{app_config['datastore']['port']}/" +
+    f"{app_config['datastore']['db']}"
     )
-
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
-
-# application config
-with open('config/app_conf.yml', mode='r') as file:
-    app_config = yaml.safe_load(file.read())
-
-SERVER_HOST = getenv('SERVER_HOST', default=app_config['server']['host'])
-SERVER_PORT = getenv('SERVER_PORT', default=app_config['server']['port'])
-DATA_TOPIC = getenv('DATA_TOPIC', default=app_config['events']['topic'])
 
 # Endpoints
 def root() -> None:

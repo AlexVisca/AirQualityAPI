@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, Float, String, DateTime
-from data.base import Base
+from base import Base
 
 
 class Stats(Base):
