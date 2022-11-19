@@ -24,7 +24,7 @@ from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
 
 # Environment config
-if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'pro':
+if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'prod':
     app_conf_file = 'config/app_conf.yml'
     log_conf_file = 'config/log_conf.yml'
 else:

@@ -55,6 +55,7 @@ services:
       context: ../receiver
     image: api_receiver:latest
     environment:
+      TARGET_ENV: prod
       SERVER_HOST: kafka
       SERVER_PORT: 9092
     volumes:
@@ -74,6 +75,7 @@ services:
       context: ../storage
     image: api_storage:latest
     environment:
+      TARGET_ENV: prod
       SERVER_HOST: kafka
       SERVER_PORT: 9092
       DB_HOST: database
@@ -95,6 +97,7 @@ services:
       context: ../processing
     image: api_processing:latest
     environment:
+      TARGET_ENV: prod
       SERVER_HOST: storage
       SERVER_PORT: 8090
     volumes:
@@ -114,6 +117,7 @@ services:
       context: ../log_audit
     image: api_auditlog:latest
     environment:
+      TARGET_ENV: prod
       SERVER_HOST: kafka
       SERVER_PORT: 9092
     volumes:
