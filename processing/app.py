@@ -20,6 +20,7 @@ import time
 import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
 from connexion import NoContent
+from requests.exceptions import RequestException, ConnectionError
 from datetime import datetime
 from os import environ
 from base import Base
@@ -32,9 +33,11 @@ DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 # Environment config
 if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'prod':
-    app_conf_file = 'config/app_conf.yml'
-    log_conf_file = 'config/log_conf.yml'
+    logging.info("ENV - Prod")
+    app_conf_file = '/config/app_conf.yml'
+    log_conf_file = '/config/log_conf.yml'
 else:
+    logging.info("ENV - Dev")
     app_conf_file = 'app_conf.yml'
     log_conf_file = 'log_conf.yml'
 
@@ -196,13 +199,13 @@ def create_connection(url: str, timeout: int) -> None:
             logger.info(f"Connected to server at {url} - {res.status_code}")
             break
 
-        except requests.exceptions.ConnectionError as err:
-            logger.warning(f"Unable to connect to server. Error: {err}")
+        except ConnectionError as err:
+            logger.warning(f"Unable to connect to server. Error: {err} - Retries ({retries})")
             retries += 1
             time.sleep(2)
             continue
         
-        except requests.exceptions.RequestException as e:
+        except RequestException as e:
             logger.error(e)
             raise SystemExit(1)
     
