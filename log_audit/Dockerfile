@@ -16,5 +16,5 @@ COPY .  .
 # Enable shell script
 RUN chmod +x ./app-entrypoint.sh
 # Program entrypoint
-ENTRYPOINT [ "app-entrypoint.sh" ]
+ENTRYPOINT [ "./app-entrypoint.sh" ]
 CMD [ "python3", "app.py" ]
