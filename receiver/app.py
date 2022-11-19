@@ -106,7 +106,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
             return topic
 
         except KafkaException as e:
-            logger.error(f"Connection failed - {e}")
+            logger.error(f"Connection failed - {e} - Retries: ({count})")
             time.sleep(timeout)
             count += 1
             continue
