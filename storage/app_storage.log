@@ -1,0 +1,59 @@
+2022-11-19 22:34:06,661 - database - ERROR - 1146 (42S02): Table 'telemetry.temperature' doesn't exist
+2022-11-19 22:35:58,097 - database - ERROR - 1146 (42S02): Table 'telemetry.temperature' doesn't exist
+2022-11-19 22:39:34,410 - database - ERROR - 1146
+2022-11-19 22:44:07,659 - database - ERROR - 1146: Table doesn't exist
+2022-11-19 22:47:08,810 - database - ERROR - 1146: Table doesn't exist
+2022-11-19 22:47:14,833 - database - INFO - None
+2022-11-19 22:48:40,553 - database - INFO - ('temperature',)
+2022-11-19 22:49:38,606 - database - INFO - None
+2022-11-19 22:50:08,349 - database - INFO - []
+2022-11-19 22:51:55,861 - database - INFO - Table has not been created yet
+2022-11-19 22:56:06,486 - database - INFO - Table has not been created yet
+2022-11-19 22:56:10,577 - database - INFO - [('temperature',)]
+2022-11-19 22:56:24,808 - database - INFO - [('temperature',)]
+2022-11-19 22:59:51,365 - database - INFO - Table has not been created yet
+2022-11-19 22:59:51,434 - database - INFO - Created table `temperature`
+2022-11-19 22:59:51,459 - database - INFO - Created table `environment`
+2022-11-19 23:00:04,636 - database - INFO - [('temperature',)]
+2022-11-19 23:01:58,790 - database - INFO - Table has not been created yet
+2022-11-19 23:01:58,835 - database - INFO - Created table `temperature`
+2022-11-19 23:01:58,863 - database - INFO - Created table `environment`
+2022-11-19 23:02:24,402 - database - INFO - [('environment',), ('temperature',)]
+2022-11-19 23:04:24,340 - database - INFO - []
+2022-11-19 23:04:59,247 - database - INFO - []
+2022-11-19 23:08:19,264 - database - INFO - []
+2022-11-19 23:08:19,265 - database - INFO - Table has not been created yet list index out of range
+2022-11-19 23:08:19,345 - database - INFO - Created table `temperature`
+2022-11-19 23:08:19,386 - database - INFO - Created table `environment`
+2022-11-19 23:08:22,981 - database - INFO - [('environment',), ('temperature',)]
+2022-11-19 23:11:02,308 - database - INFO - []
+2022-11-19 23:11:02,308 - database - INFO - Table has not been created yet
+2022-11-19 23:14:14,454 - database - ERROR - 1064: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE item' at line 1
+2022-11-19 23:14:37,509 - database - ERROR - 1146: 1146 (42S02): Table 'telemetry.item' doesn't exist
+2022-11-19 23:15:25,425 - database - ERROR - 1146:Table 'telemetry.item' doesn't exist 1146 (42S02): Table 'telemetry.item' doesn't exist
+2022-11-19 23:15:57,838 - database - ERROR - 1146: Table 'telemetry.item' doesn't exist
+2022-11-19 23:16:14,966 - database - ERROR - 1146: Table 'telemetry.temperature' doesn't exist
+2022-11-19 23:17:28,453 - database - INFO - []
+2022-11-19 23:17:28,453 - database - INFO - Table has not been created yet
+2022-11-19 23:17:28,507 - database - INFO - Created table `temperature`
+2022-11-19 23:17:28,539 - database - INFO - Created table `environment`
+2022-11-19 23:17:33,826 - database - INFO - [('environment',), ('temperature',)]
+2022-11-19 23:17:33,826 - database - INFO - [('environment',), ('temperature',)]
+2022-11-19 23:21:32,616 - database - INFO - [('environment',), ('temperature',)]
+2022-11-19 23:21:32,617 - database - INFO - temperature
+2022-11-19 23:26:16,714 - database - INFO - Tables have not been created yet
+2022-11-19 23:26:16,773 - database - INFO - Created table `temperature`
+2022-11-19 23:26:16,815 - database - INFO - Created table `environment`
+2022-11-19 23:26:20,397 - database - INFO - Tables: temperature, environment
+2022-11-19 23:59:00,025 - database - INFO - Connected to Database telemetry - MySQL version 8.0.31
+2022-11-19 23:59:00,029 - database - ERROR - 1146 (42S02): Table 'telemetry.temperature' doesn't exist
+2022-11-20 00:02:30,796 - database - INFO - Connected to telemetry database - MySQL version 8.0.31
+2022-11-20 00:02:30,806 - database - INFO - Creating tables
+2022-11-20 00:02:30,859 - database - INFO - Created table `temperature`
+2022-11-20 00:02:30,894 - database - INFO - Created table `environment`
+2022-11-20 00:02:36,884 - database - INFO - Connected to telemetry database - MySQL version 8.0.31
+2022-11-20 00:02:36,893 - database - INFO - Tables: temperature, environment
+2022-11-20 00:08:58,355 - database - INFO - Connected to telemetry database - MySQL version 8.0.31
+2022-11-20 00:08:58,364 - database - INFO - telemetry tables: temperature, environment
+2022-11-20 00:16:23,647 - database - INFO - Connected to telemetry database - MySQL version 8.0.31
+2022-11-20 00:16:23,656 - database - INFO - telemetry tables: temperature, environment

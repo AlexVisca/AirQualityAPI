@@ -7,6 +7,6 @@ events:
 datastore:
   username: storage
   password: store
-  host: 20.106.90.66
+  host: 127.0.0.1
   port: 3306
   db: telemetry
