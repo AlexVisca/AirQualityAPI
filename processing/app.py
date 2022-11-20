@@ -18,26 +18,27 @@ import json
 import requests
 import time
 import yaml
-from apscheduler.schedulers.background import BackgroundScheduler
 from connexion import NoContent
-from requests.exceptions import RequestException, ConnectionError
 from datetime import datetime
-from os import environ
-from base import Base
+from data import Base, create, version
+from os import environ, path
 from stats import Stats
+from sqlite3 import connect
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from requests.exceptions import RequestException, ConnectionError
+from apscheduler.schedulers.background import BackgroundScheduler
 
 # Constants
 DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 # Environment config
 if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'prod':
-    logging.info("ENV - Prod")
+    logging.info("ENV: Production")
     app_conf_file = '/config/app_conf.yml'
     log_conf_file = '/config/log_conf.yml'
 else:
-    logging.info("ENV - Dev")
+    logging.info("ENV: Development")
     app_conf_file = 'app_conf.yml'
     log_conf_file = 'log_conf.yml'
 
@@ -53,12 +54,11 @@ with open(app_conf_file, mode='r') as file:
     app_config = yaml.safe_load(file.read())
 
 SERVER_URL = app_config['eventstore']['url']
+DATA_URL = app_config['datastore']['filename']
 INTERVAL = app_config['scheduler']['period_sec']
 TIMEOUT = app_config['connection']['timeout']
 
-DB_ENGINE = create_engine(
-    f"sqlite:///{app_config['datastore']['filename']}"
-    )
+DB_ENGINE = create_engine(f"sqlite:///{DATA_URL}")
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
@@ -140,7 +140,7 @@ def populate_stats() -> None:
     
     logger.info("Stopped periodic processing")
 
-# Processer sub-functions
+# Database functions
 def query_db() -> dict:
     session = DB_SESSION()
     result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
@@ -188,8 +188,29 @@ def init_db() -> None:
     
     session.close()
 
+def connect_database(filename: str):
+    abs_path = path.join(path.dirname(__file__), filename)
+    if path.exists(abs_path):
+        with connect(filename) as conn:
+            c = conn.cursor()
+            c.execute(version)
+            data = c.fetchall().pop()
+        ersion = data[0]
+        logger.info(f"Database connected: {abs_path} - SQLite v{ersion}")
+
+    elif not path.exists(abs_path):
+        logger.info(f"Database {filename} does not exist - Initialising...")
+        with connect(filename) as conn:
+            c = conn.cursor()
+            try:
+                c.execute(create)
+            finally:
+                conn.commit()
+        logger.info(f"Database created: {abs_path}")
+        init_db()
+
 # Server connection
-def create_connection(url: str, timeout: int) -> None:
+def connect_server(url: str, timeout: int) -> None:
     retries: int = 0
     while retries < timeout:
         try:
@@ -226,8 +247,8 @@ app = connexion.FlaskApp(__name__, specification_dir='openapi/')
 app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
 
 def main() -> None:
-    init_db()
-    create_connection(SERVER_URL, TIMEOUT)
+    connect_database(DATA_URL)
+    connect_server(SERVER_URL, TIMEOUT)
     init_scheduler()
     app.run(
         port=8100, 

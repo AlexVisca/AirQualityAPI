@@ -27,11 +27,11 @@ DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 # Environment config
 if 'TARGET_ENV' in environ and environ['TARGET_ENV'] == 'prod':
-    logging.info("ENV - Prod")
+    logging.info("ENV: Production")
     app_conf_file = '/config/app_conf.yml'
     log_conf_file = '/config/log_conf.yml'
 else:
-    logging.info("ENV - Dev")
+    logging.info("ENV: Development")
     app_conf_file = 'app_conf.yml'
     log_conf_file = 'log_conf.yml'
 
