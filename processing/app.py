@@ -199,7 +199,7 @@ def connect_database(filename: str):
         ersion = data[0]
         logger.info(f"Database connected: {abs_path} - SQLite v{ersion}")
 
-    elif not path.exists(abs_path):
+    else:
         logger.info(f"Database {filename} does not exist - Initialising...")
         with connect(filename) as conn:
             c = conn.cursor()
