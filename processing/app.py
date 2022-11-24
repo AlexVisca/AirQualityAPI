@@ -21,6 +21,7 @@ import yaml
 from connexion import NoContent
 from datetime import datetime
 from data import Base, create, version
+from flask_cors import CORS, cross_origin
 from os import environ, path
 from stats import Stats
 from sqlite3 import connect
@@ -244,6 +245,8 @@ def init_scheduler() -> None:
 
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
+CORS(app.app)
+app.app.config['CORS_HEADERS'] = 'Content-Type'
 app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
 
 def main() -> None:

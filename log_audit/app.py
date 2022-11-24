@@ -18,6 +18,7 @@ import requests
 import time
 import yaml
 from connexion import NoContent
+from flask_cors import CORS, cross_origin
 from os import environ
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
@@ -144,6 +145,8 @@ def create_kafka_connection(max_retries: int, timeout: int):
 topic = create_kafka_connection(max_retries=3, timeout=2)
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
+CORS(app.app)
+app.app.config['CORS_HEADERS'] = 'Content-Type'
 app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
 
 def main() -> None:
