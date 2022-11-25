@@ -157,9 +157,10 @@ def create_kafka_connection(max_retries: int, timeout: int):
 topic = create_kafka_connection(max_retries=3, timeout=2)
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
-CORS(app.app)
-app.app.config['CORS_HEADERS'] = 'Content-Type'
-app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
+if 'TARGET_ENV' not in environ and environ['TARGET_ENV'] != 'prod':
+    CORS(app.app)
+    app.app.config['CORS_HEADERS'] = 'Content-Type'
+app.add_api('openapi.yml', base_path='/audit_log', strict_validation=True, validate_responses=True)
 
 def main() -> None:
     app.run(port=8110, debug=False)

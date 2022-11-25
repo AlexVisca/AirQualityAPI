@@ -249,9 +249,10 @@ def init_scheduler() -> None:
 
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
-CORS(app.app)
-app.app.config['CORS_HEADERS'] = 'Content-Type'
-app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
+if 'TARGET_ENV' not in environ and environ['TARGET_ENV'] != 'prod':
+    CORS(app.app)
+    app.app.config['CORS_HEADERS'] = 'Content-Type'
+app.add_api('openapi.yml', base_path='/processing', strict_validation=True, validate_responses=True)
 
 def main() -> None:
     connect_database(DATA_URL)

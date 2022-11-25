@@ -45,9 +45,9 @@ services:
     volumes:
       - mysql:/var/lib/mysql
     ports:
-      - '3306:3306'
-    expose:
       - '3306'
+    networks:
+      - 'api.network'
 
   receiver:
     hostname: receiver
@@ -62,9 +62,9 @@ services:
       - /home/api-dev/config/receiver:/config
       - /home/api-dev/logs:/logs
     ports:
-      - '8080:8080'
-    expose:
       - '8080'
+    networks:
+      - 'api.network'
     depends_on:
       - "kafka"
       - "storage"
@@ -84,15 +84,15 @@ services:
       - /home/api-dev/config/storage:/config
       - /home/api-dev/logs:/logs
     ports:
-      - '8090:8090'
-    expose:
       - '8090'
+    networks:
+      - 'api.network'
     depends_on:
       - "kafka"
       - "database"
 
   processing:
-    hostname: processor
+    hostname: processing
     build: 
       context: ../processing
     image: api_processing:latest
@@ -105,14 +105,14 @@ services:
       - /home/api-dev/logs:/logs
       - stats:/src/data
     ports:
-      - '8100:8100'
-    expose:
       - '8100'
+    networks:
+      - 'api.network'
     depends_on:
       - "storage"
 
   auditlog:
-    hostname: auditlog
+    hostname: audit_log
     build: 
       context: ../log_audit
     image: api_auditlog:latest
@@ -124,9 +124,9 @@ services:
       - /home/api-dev/config/audit_log:/config
       - /home/api-dev/logs:/logs
     ports:
-      - '8110:8110'
-    expose:
       - '8110'
+    networks:
+      - 'api.network'
     depends_on:
       - "kafka"
 
@@ -136,11 +136,31 @@ services:
       context: ../ui-dashboard
     image: api_dashboard:latest
     ports:
-      - '3000:3000'
+      - '3000'
+    networks:
+      - 'api.network'
     depends_on:
       - "processing"
       - "auditlog"
 
+  nginx:
+    image: nginx:latest
+    volumes:
+      - /home/api-dev/nginx/conf.d:/etc/nginx/conf.d:ro
+    ports:
+      - '80:80'
+    networks:
+      - 'api.network'
+    depends_on:
+      - "receiver"
+      - "storage"
+      - "processing"
+      - "auditlog"
+      - "dashboard"
+
 volumes:
   mysql:
   stats:
+
+networks:
+  api.network:

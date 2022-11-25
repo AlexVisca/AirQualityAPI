@@ -237,7 +237,7 @@ def connect_database(user: str, password: str, host: str, port: int, database: s
 
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
-app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
+app.add_api('openapi.yml', base_path='/storage', strict_validation=True, validate_responses=True)
 
 def main() -> None:
     connect_database(user=DB_USER, password=DB_PASS, host=DB_HOST, port=DB_PORT, database=DB_NAME)

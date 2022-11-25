@@ -118,7 +118,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
 topic = create_kafka_connection(max_retries=3, timeout=2)
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
-app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
+app.add_api('openapi.yml', base_path='/receiver', strict_validation=True, validate_responses=True)
 
 
 if __name__ == '__main__':
