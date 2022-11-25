@@ -141,6 +141,9 @@ def populate_stats() -> None:
     except IndexError:
         logger.info("Telemetry is up to date")
     
+    except KeyError:
+        logger.info("Database empty")
+    
     logger.info("Stopped periodic processing")
 
 # Database functions
