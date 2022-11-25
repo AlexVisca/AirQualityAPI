@@ -30,7 +30,14 @@ paths:
       operationId: app.get_temperature
       description: gets temperature readings added after a timestamp
       parameters:
-        - name: timestamp
+        - name: start_timestamp
+          in: query
+          description: limits the number of items per page
+          schema:
+            type: string
+            format: date-time
+            example: 2022-12-31 12:34:56.000000
+        - name: end_timestamp
           in: query
           description: limits the number of items per page
           schema:
@@ -64,7 +71,14 @@ paths:
       operationId: app.get_environment
       description: gets environment readings added after a timestamp
       parameters:
-        - name: timestamp
+        - name: start_timestamp
+          in: query
+          description: limits the number of items per page
+          schema:
+            type: string
+            format: date-time
+            example: 2022-12-31 12:34:56.000000
+        - name: end_timestamp
           in: query
           description: limits the number of items per page
           schema:
