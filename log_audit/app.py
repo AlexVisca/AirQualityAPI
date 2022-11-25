@@ -58,18 +58,24 @@ def get_temperature(index):
     try:
         count = 0
         while count < index + 1:
-            for msg in consumer:
-                msg_str = msg.value.decode('utf-8')
-                msg = json.loads(msg_str)
-                
-                if msg['type'] == 'temperature':
-                    payload = msg
-                    count += 1
-                
-                elif msg['type'] == 'environment':
-                    continue
+            try:
+                for msg in consumer:
+                    msg_str = msg.value.decode('utf-8')
+                    msg = json.loads(msg_str)
+                    
+                    if msg['type'] == 'temperature':
+                        payload = msg
+                        count += 1
+                    
+                    elif msg['type'] == 'environment':
+                        continue
 
-        return payload, 200
+                return payload, 200
+            
+            except SocketDisconnectedError as e:
+                logger.warning(e)
+                consumer.stop()
+                consumer.start()
 
     except:
         logger.error("No more messages found")
@@ -86,18 +92,24 @@ def get_environment(index):
     try:
         count = 0
         while count < index + 1:
-            for msg in consumer:
-                msg_str = msg.value.decode('utf-8')
-                msg = json.loads(msg_str)
-                
-                if msg['type'] == 'environment':
-                    payload = msg
-                    count += 1
-                
-                elif msg['type'] == 'temperature':
-                    continue
+            try:    
+                for msg in consumer:
+                    msg_str = msg.value.decode('utf-8')
+                    msg = json.loads(msg_str)
+                    
+                    if msg['type'] == 'environment':
+                        payload = msg
+                        count += 1
+                    
+                    elif msg['type'] == 'temperature':
+                        continue
 
-        return payload, 200
+                return payload, 200
+            
+            except SocketDisconnectedError as e:
+                logger.warning(e)
+                consumer.stop()
+                consumer.start()
 
     except:
         logger.error("No more messages found")
