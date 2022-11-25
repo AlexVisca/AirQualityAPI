@@ -111,7 +111,7 @@ services:
     depends_on:
       - "storage"
 
-  auditlog:
+  audit_log:
     hostname: audit_log
     build: 
       context: ../log_audit
@@ -141,7 +141,7 @@ services:
       - 'api.network'
     depends_on:
       - "processing"
-      - "auditlog"
+      - "audit_log"
 
   nginx:
     image: nginx:latest
@@ -155,7 +155,7 @@ services:
       - "receiver"
       - "storage"
       - "processing"
-      - "auditlog"
+      - "audit_log"
       - "dashboard"
 
 volumes:
