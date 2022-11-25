@@ -209,7 +209,7 @@ def connect_database(filename: str):
                 c.execute(create)
             finally:
                 conn.commit()
-        logger.info(f"Database created: {abs_path}/{filename}")
+        logger.info(f"Database created: {abs_path}")
         init_db()
 
 # Server connection
