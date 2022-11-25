@@ -97,7 +97,8 @@ def populate_stats() -> None:
         'end_timestamp': timestamp}
         )
     temp_table_contents = json.loads(temp_res.text)
-    logger.info(f"Response received from database. Status code: {temp_res.status_code}, size: {len(temp_table_contents)} content: {temp_table_contents}")
+    logger.info(f"Response received from database. Status code: {temp_res.status_code}, Content length: {len(temp_table_contents)}")
+    logger.debug(f"Content: {temp_table_contents}")
     # Environment table
     env_res = requests.get(
         f"{SERVER_URL}/environment", 
@@ -105,7 +106,8 @@ def populate_stats() -> None:
         'end_timestamp': timestamp}
         )
     env_table_contents = json.loads(env_res.text)
-    logger.info(f"Response received from database. Status code: {env_res.status_code}, size: {len(env_table_contents)} content: {env_table_contents}")
+    logger.info(f"Response received from database. Status code: {env_res.status_code}, Content length: {len(env_table_contents)}")
+    logger.debug(f"Content: {env_table_contents}")
     # Parse updated telemetry
     try:
         last_temp_packet = temp_table_contents[-1]
@@ -138,13 +140,11 @@ def populate_stats() -> None:
         insert_db(payload)
         logger.info("Database updated with latest telemetry")
 
-    except IndexError as e:
-        logger.error(e)
+    except IndexError:
         logger.info("Telemetry is up to date")
     
     except KeyError as e:
-        logger.error(e)
-        logger.info("Database empty")
+        logger.error(f"Invalid content: {e}")
     
     logger.info("Stopped periodic processing")
 
@@ -243,11 +243,8 @@ def connect_server(url: str, timeout: int) -> None:
         raise SystemExit(1)
 
 def init_scheduler() -> None:
-    sched = BackgroundScheduler(daemon=True)
-    sched.add_job(populate_stats, 
-        'interval', 
-        seconds=INTERVAL
-        )
+    sched = BackgroundScheduler(daemon=True, job_defaults={'max_instances': 3})
+    sched.add_job(populate_stats, 'interval', seconds=INTERVAL)
     sched.start()
 
 
@@ -260,9 +257,7 @@ def main() -> None:
     connect_database(DATA_URL)
     connect_server(SERVER_URL, TIMEOUT)
     init_scheduler()
-    app.run(
-        port=8100, 
-        debug=False)
+    app.run(port=8100, debug=False)
 
 
 if __name__ == '__main__':

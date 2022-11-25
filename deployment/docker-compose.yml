@@ -103,7 +103,7 @@ services:
     volumes:
       - /home/api-dev/config/processing:/config
       - /home/api-dev/logs:/logs
-      - stats:/src
+      - stats:/src/data
     ports:
       - '8100:8100'
     expose:
