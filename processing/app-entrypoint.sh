@@ -2,7 +2,7 @@
 set -e
 # wait for the server to be up
 if [ -n "$SERVER_HOST" ]; then
-    /usr/bin/wait-for-it "$SERVER_HOST:${SERVER_PORT:-8090}"
+    /usr/bin/wait-for-it "$SERVER_HOST:${SERVER_PORT:-8090}" -t 0
 fi
 # run the main container command
 exec "$@"

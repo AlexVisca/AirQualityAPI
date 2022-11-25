@@ -201,7 +201,7 @@ def connect_database(filename: str):
         ersion = data[0]
         logger.info(f"Database connected: {abs_path} - SQLite v{ersion}")
 
-    else:
+    elif not path.exists(abs_path):
         logger.info(f"Database {filename} does not exist - Initialising...")
         with connect(filename) as conn:
             c = conn.cursor()
@@ -209,7 +209,7 @@ def connect_database(filename: str):
                 c.execute(create)
             finally:
                 conn.commit()
-        logger.info(f"Database created: {abs_path}")
+        logger.info(f"Database created: {abs_path}/{filename}")
         init_db()
 
 # Server connection
