@@ -97,7 +97,7 @@ def populate_stats() -> None:
         'end_timestamp': timestamp}
         )
     temp_table_contents = json.loads(temp_res.text)
-    logger.info(f"Response received from database. Status code: {temp_res.status_code}, content: {len(temp_table_contents)}")
+    logger.info(f"Response received from database. Status code: {temp_res.status_code}, size: {len(temp_table_contents)} content: {temp_table_contents}")
     # Environment table
     env_res = requests.get(
         f"{SERVER_URL}/environment", 
@@ -105,7 +105,7 @@ def populate_stats() -> None:
         'end_timestamp': timestamp}
         )
     env_table_contents = json.loads(env_res.text)
-    logger.info(f"Response received from database. Status code: {env_res.status_code}, content: {len(env_table_contents)}")
+    logger.info(f"Response received from database. Status code: {env_res.status_code}, size: {len(env_table_contents)} content: {env_table_contents}")
     # Parse updated telemetry
     try:
         last_temp_packet = temp_table_contents[-1]
@@ -138,10 +138,12 @@ def populate_stats() -> None:
         insert_db(payload)
         logger.info("Database updated with latest telemetry")
 
-    except IndexError:
+    except IndexError as e:
+        logger.error(e)
         logger.info("Telemetry is up to date")
     
-    except KeyError:
+    except KeyError as e:
+        logger.error(e)
         logger.info("Database empty")
     
     logger.info("Stopped periodic processing")
