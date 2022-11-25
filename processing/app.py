@@ -93,14 +93,16 @@ def populate_stats() -> None:
     # Temperature table
     temp_res = requests.get(
         f"{SERVER_URL}/temperature", 
-        params={'timestamp': last_timestamp}
+        params={'start_timestamp': last_timestamp, 
+        'end_timestamp': timestamp}
         )
     temp_table_contents = json.loads(temp_res.text)
     logger.info(f"Response received from database. Status code: {temp_res.status_code}, content: {len(temp_table_contents)}")
     # Environment table
     env_res = requests.get(
         f"{SERVER_URL}/environment", 
-        params={'timestamp': last_timestamp}
+        params={'start_timestamp': last_timestamp, 
+        'end_timestamp': timestamp}
         )
     env_table_contents = json.loads(env_res.text)
     logger.info(f"Response received from database. Status code: {env_res.status_code}, content: {len(env_table_contents)}")

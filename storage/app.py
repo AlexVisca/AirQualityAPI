@@ -24,6 +24,7 @@ from os import environ
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from pykafka.exceptions import KafkaException, SocketDisconnectedError
+from sqlalchemy import and_
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from threading import Thread
@@ -72,12 +73,14 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 def root() -> None:
     return NoContent, 204
 
-def get_temperature(timestamp: str) -> list:
-    timestamp_datetime = datetime.strptime(timestamp, DATETIME_FORMAT)
-
+def get_temperature(start_timestamp: str, end_timestamp: str) -> list:
     session = DB_SESSION()
-    readings = session.query(Temperature).filter(Temperature.date_created >= timestamp_datetime)
-
+    start_timestamp_datetime = datetime.strptime(start_timestamp, DATETIME_FORMAT)
+    end_timestamp_datetime = datetime.strptime(end_timestamp, DATETIME_FORMAT)
+    readings = session.query(Temperature).filter(
+        and_(Temperature.date_created >= start_timestamp_datetime, 
+        Temperature.date_created < end_timestamp_datetime)
+        )
     results_list = list()
     for reading in readings:
         results_list.append(reading.to_dict())
@@ -87,12 +90,14 @@ def get_temperature(timestamp: str) -> list:
     return results_list, 200
 
 
-def get_environment(timestamp: str) -> list:
-    timestamp_datetime = datetime.strptime(timestamp, DATETIME_FORMAT)
-
+def get_environment(start_timestamp: str, end_timestamp: str) -> list:
     session = DB_SESSION()
-    readings = session.query(Environment).filter(Environment.date_created >= timestamp_datetime)
-
+    start_timestamp_datetime = datetime.strptime(start_timestamp, DATETIME_FORMAT)
+    end_timestamp_datetime = datetime.strptime(end_timestamp, DATETIME_FORMAT)
+    readings = session.query(Environment).filter(
+        and_(Environment.date_created >= start_timestamp_datetime, 
+        Environment.date_created < end_timestamp_datetime)
+        )
     results_list = list()
     for reading in readings:
         results_list.append(reading.to_dict())

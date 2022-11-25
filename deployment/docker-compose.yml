@@ -130,6 +130,17 @@ services:
     depends_on:
       - "kafka"
 
+  dashboard:
+    hostname: dashboard
+    build: 
+      context: ../ui-dashboard
+    image: api_dashboard:latest
+    ports:
+      - '3000:3000'
+    depends_on:
+      - "processing"
+      - "auditlog"
+
 volumes:
   mysql:
   stats:
