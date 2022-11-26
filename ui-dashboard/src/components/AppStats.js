@@ -34,21 +34,25 @@ export default function AppStats() {
                 <h1>Latest Stats</h1>
                 <table className={"StatsTable"}>
 					<tbody>
+                        <caption>Air Quality Readings</caption>
+                        <tr>
+                            <th colSpan="2">Temperature</th>
+                        </tr>
 						<tr>
-							<th colSpan="2">Temperature Readings</th>
-						</tr>
-						<tr>
-							<td># Max: {stats['max_temp']}&deg;C</td>
-							<td># Min: {stats['min_temp']}&deg;C</td>
+							<td>Max: {stats['max_temp']}&deg;C</td>
+							<td>Min: {stats['min_temp']}&deg;C</td>
 						</tr>
 						<tr>
 							<td colspan="2">Average: {stats['avg_temp']}&deg;C</td>
 						</tr>
+                        <tr>
+                            <th colSpan="2">Environment</th>
+                        </tr>
 						<tr>
-							<td colspan="2">Max PM<sub>2.5</sub>: {stats['max_pm2_5']}</td>
+							<td colspan="2">Max PM<sub>2.5</sub>: {stats['max_pm2_5']}ppm</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max CO<sub>2</sub>: {stats['max_co_2']}</td>
+							<td colspan="2">Max CO<sub>2</sub>: {stats['max_co_2']}ppm</td>
 						</tr>
 					</tbody>
                 </table>

@@ -72,13 +72,14 @@ def get_stats() -> dict:
         'min_temp': data['min_temp'], 
         'avg_temp': data['avg_temp'], 
         'max_pm2_5': data['max_pm2_5'], 
-        'max_co_2': data['max_co_2']
+        'max_co_2': data['max_co_2'], 
+        'last_updated': data['last_updated']
     }
     return stats, 200
 
 # processor logic
 def populate_stats() -> None:
-    logger.info("Retrieving updated data")
+    logger.info("Checking for updated data")
     # read in stats from sqlite db
     stats = query_db()
     # last updated statistics

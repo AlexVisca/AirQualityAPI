@@ -87,6 +87,9 @@ def get_temperature(start_timestamp: str, end_timestamp: str) -> list:
         results_list.append(reading.to_dict())
     
     session.close()
+
+    if len(results_list) >= 1:
+        logger.info(f"Updated data sent for processing. Content length: {len(results_list)}")
     logger.debug(f"Query for temperature after {start_timestamp_datetime} returns {len(results_list)}")
 
     return results_list, 200
@@ -105,6 +108,9 @@ def get_environment(start_timestamp: str, end_timestamp: str) -> list:
         results_list.append(reading.to_dict())
     
     session.close()
+
+    if len(results_list) >= 1:
+        logger.info(f"Updated data sent for processing. Content length: {len(results_list)}")
     logger.debug(f"Query for environment after {start_timestamp_datetime} returns {len(results_list)}")
 
     return results_list, 200
@@ -126,7 +132,7 @@ def temperature(body) -> None:
     session.commit()
 
     session.close()
-    logger.info(f"Stored temperature data from {location} -- trace ID: {trace}")
+    logger.info(f"Stored temperature data from device at {location} -- trace ID: {trace}")
     
     return NoContent, 201
 
@@ -147,7 +153,7 @@ def environment(body) -> None:
     session.commit()
 
     session.close()
-    logger.info(f"Stored environment data from {location} -- trace ID: {trace}")
+    logger.info(f"Stored environment data from device at {location} -- trace ID: {trace}")
     
     return NoContent, 201
 
