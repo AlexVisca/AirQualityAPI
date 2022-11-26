@@ -78,7 +78,7 @@ def get_stats() -> dict:
 
 # processor logic
 def populate_stats() -> None:
-    logger.info("Started periodic processing")
+    logger.info("Retrieving updated data")
     # read in stats from sqlite db
     stats = query_db()
     # last updated statistics
@@ -126,10 +126,10 @@ def populate_stats() -> None:
             }
             # Add new row to database
             insert_db(payload)
-            logger.info("Database updated with latest telemetry")
+            logger.info("Data updated")
 
         except IndexError:
-            logger.info("Telemetry is up to date")
+            logger.info("Data is up-to-date")
         
         except KeyError as e:
             logger.error(f"Invalid content: {e}")
@@ -137,7 +137,7 @@ def populate_stats() -> None:
     except JSONDecodeError:
         logger.warning(f"Storage server unavailable.")
         
-    logger.info("Stopped periodic processing")
+    logger.debug("Stopped periodic processing")
 
 
 def query_temperature(last_timestamp, timestamp):
@@ -147,14 +147,18 @@ def query_temperature(last_timestamp, timestamp):
             params={'start_timestamp': last_timestamp, 
             'end_timestamp': timestamp}
             )
-        temp_table_contents = json.loads(temp_res.text)
-        logger.info(f"Updating temperature. Content length: {len(temp_table_contents)} -- GET /storage/temperature {temp_res.status_code}")
-        logger.debug(f"Content: {temp_table_contents}")
+        temp_table_contents = json.loads(temp_res.text) # Error trigger
+
+        if len(temp_table_contents) == 0:
+            logger.info(f"No new data")
+        else:
+            logger.info(f"Updating temperature data. Content length: {len(temp_table_contents)} -- GET /storage/temperature {temp_res.status_code}")
+            logger.debug(f"Content: {temp_table_contents}")
 
         return temp_table_contents
 
     except JSONDecodeError as e:
-        logger.error(f"{e}")
+        logger.warning(f"No content returned: {e}")
         raise
 
 def query_environment(last_timestamp, timestamp):
@@ -164,14 +168,18 @@ def query_environment(last_timestamp, timestamp):
             params={'start_timestamp': last_timestamp, 
             'end_timestamp': timestamp}
             )
-        env_table_contents = json.loads(env_res.text)
-        logger.info(f"Updating environment. Content length: {len(env_table_contents)} -- GET /storage/environment {env_res.status_code}")
-        logger.debug(f"Content: {env_table_contents}")
+        env_table_contents = json.loads(env_res.text) # Error trigger
+        
+        if len(env_table_contents) == 0:
+            logger.info(f"No new data")
+        else:
+            logger.info(f"Updating environment data. Content length: {len(env_table_contents)} -- GET /storage/environment {env_res.status_code}")
+            logger.debug(f"Content: {env_table_contents}")
 
         return env_table_contents
 
     except JSONDecodeError as e:
-        logger.error(f"{e}")
+        logger.warning(f"No content returned: {e}")
         raise
 
 
