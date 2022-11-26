@@ -150,7 +150,7 @@ def query_temperature(last_timestamp, timestamp):
         temp_table_contents = json.loads(temp_res.text) # Error trigger
 
         if len(temp_table_contents) == 0:
-            logger.info(f"No new data")
+            logger.info(f"No new temperature data")
         else:
             logger.info(f"Updating temperature data. Content length: {len(temp_table_contents)} -- GET /storage/temperature {temp_res.status_code}")
             logger.debug(f"Content: {temp_table_contents}")
@@ -171,7 +171,7 @@ def query_environment(last_timestamp, timestamp):
         env_table_contents = json.loads(env_res.text) # Error trigger
         
         if len(env_table_contents) == 0:
-            logger.info(f"No new data")
+            logger.info(f"No new environment data")
         else:
             logger.info(f"Updating environment data. Content length: {len(env_table_contents)} -- GET /storage/environment {env_res.status_code}")
             logger.debug(f"Content: {env_table_contents}")
