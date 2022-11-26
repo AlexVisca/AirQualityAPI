@@ -51,31 +51,30 @@ DATA_TOPIC = app_config['events']['topic']
 
 # endpoints
 def get_temperature(index):
-    consumer = topic.get_simple_consumer(
-        reset_offset_on_start=True, 
-        consumer_timeout_ms=1000
-    )
     try:
+        consumer = topic.get_simple_consumer(
+            reset_offset_on_start=True, 
+            consumer_timeout_ms=1000
+        )
         count = 0
         while count < index + 1:
-            try:
-                for msg in consumer:
-                    msg_str = msg.value.decode('utf-8')
-                    msg = json.loads(msg_str)
-                    
-                    if msg['type'] == 'temperature':
-                        payload = msg
-                        count += 1
-                    
-                    elif msg['type'] == 'environment':
-                        continue
+            for msg in consumer:
+                msg_str = msg.value.decode('utf-8')
+                msg = json.loads(msg_str)
+                
+                if msg['type'] == 'temperature':
+                    payload = msg
+                    count += 1
+                
+                elif msg['type'] == 'environment':
+                    continue
 
-                return payload, 200
+        return payload, 200
             
-            except SocketDisconnectedError as e:
-                logger.warning(e)
-                consumer.stop()
-                consumer.start()
+    except SocketDisconnectedError as e:
+        logger.warning(f"Restarting consumer - Error: {e}")
+        consumer.stop()
+        consumer.start()
 
     except:
         logger.error("No more messages found")
@@ -85,31 +84,30 @@ def get_temperature(index):
 
 
 def get_environment(index):
-    consumer = topic.get_simple_consumer(
-        reset_offset_on_start=True, 
-        consumer_timeout_ms=1000
-    )
     try:
+        consumer = topic.get_simple_consumer(
+            reset_offset_on_start=True, 
+            consumer_timeout_ms=1000
+        )
         count = 0
-        while count < index + 1:
-            try:    
-                for msg in consumer:
-                    msg_str = msg.value.decode('utf-8')
-                    msg = json.loads(msg_str)
-                    
-                    if msg['type'] == 'environment':
-                        payload = msg
-                        count += 1
-                    
-                    elif msg['type'] == 'temperature':
-                        continue
+        while count < index + 1: 
+            for msg in consumer:
+                msg_str = msg.value.decode('utf-8')
+                msg = json.loads(msg_str)
+                
+                if msg['type'] == 'environment':
+                    payload = msg
+                    count += 1
+                
+                elif msg['type'] == 'temperature':
+                    continue
 
-                return payload, 200
+        return payload, 200
             
-            except SocketDisconnectedError as e:
-                logger.warning(e)
-                consumer.stop()
-                consumer.start()
+    except SocketDisconnectedError as e:
+        logger.warning(f"Restarting consumer - Error: {e}")
+        consumer.stop()
+        consumer.start()
 
     except:
         logger.error("No more messages found")
@@ -141,6 +139,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
             topic = client.topics[str.encode(DATA_TOPIC)]
+            logger.info(f"Client connected to Kafka server")
 
             return topic
 
