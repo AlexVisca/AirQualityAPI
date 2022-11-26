@@ -98,8 +98,8 @@ services:
     image: api_processing:latest
     environment:
       TARGET_ENV: prod
-      # SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com/storage
-      # SERVER_PORT: 80
+      SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com/storage
+      SERVER_PORT: 80
     volumes:
       - /home/api-dev/config/processing:/config
       - /home/api-dev/logs:/logs

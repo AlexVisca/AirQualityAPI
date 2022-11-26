@@ -14,7 +14,7 @@ RUN pip3 install -r requirements.txt
 # Copy files to workdir
 COPY .  .
 # Enable shell script
-# RUN chmod +x ./app-entrypoint.sh
+RUN chmod +x ./app-entrypoint.sh
 # Program entrypoint
-ENTRYPOINT [ "python3" ]
-CMD [ "app.py" ]
+ENTRYPOINT [ "./app-entrypoint.sh" ]
+CMD [ "python3", "app.py" ]
