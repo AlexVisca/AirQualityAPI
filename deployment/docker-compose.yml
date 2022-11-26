@@ -146,7 +146,7 @@ services:
   nginx:
     image: nginx:latest
     volumes:
-      - /home/api-dev/nginx/conf.d:/etc/nginx/conf.d:ro
+      - /home/api-dev/nginx/conf.d:/etc/nginx/conf.d
     ports:
       - '80:80'
     networks:
