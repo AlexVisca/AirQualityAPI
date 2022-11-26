@@ -98,7 +98,7 @@ def populate_stats() -> None:
         env_table_contents = query_environment(last_timestamp, timestamp)
     
     except JSONDecodeError:
-        logger.warning(f"Storage server unavailable. {e}")
+        logger.warning(f"Storage server unavailable.")
     
     # Parse updated telemetry
     try:
