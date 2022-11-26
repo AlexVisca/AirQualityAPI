@@ -52,9 +52,13 @@ DATA_TOPIC = app_config['events']['topic']
 
 # Endpoints
 def root():
+    logger.info("Received connection request from device")
+    
     return NoContent, 204
 
 def temperature(body):
+    location = body['location']
+    trace = body['trace_id']
     # convert payload for kafka
     msg = {
         'type': 'temperature', 
@@ -67,15 +71,20 @@ def temperature(body):
     try:
         producer.produce(msg_str.encode('utf-8'))
     except (SocketDisconnectedError, LeaderNotAvailable) as e:
+        logger.warning(f"Restarting producer - ERROR: {e}")
         producer = topic.get_sync_producer()
         producer.stop()
         producer.start()
         producer.produce(msg_str.encode('utf-8'))
 
+    logger.info(f"Received temperature telemetry from device at {location} -- trace ID: {trace}")
+    
     return NoContent, 201
 
 
 def environment(body):
+    location = body['location']
+    trace = body['trace_id']
     # convert payload for kafka
     msg = {
         'type': 'environment', 
@@ -88,11 +97,14 @@ def environment(body):
     try:
         producer.produce(msg_str.encode('utf-8'))
     except (SocketDisconnectedError, LeaderNotAvailable) as e:
+        logger.warning(f"Restarting producer - ERROR: {e}")
         producer = topic.get_sync_producer()
         producer.stop()
         producer.start()
         producer.produce(msg_str.encode('utf-8'))
 
+    logger.info(f"Received environment telemetry from device at {location} -- trace ID: {trace}")
+    
     return NoContent, 201
 
 # connect to kafka server
@@ -102,6 +114,7 @@ def create_kafka_connection(max_retries: int, timeout: int):
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
             topic = client.topics[str.encode(DATA_TOPIC)]
+            logger.info(f"Client connected to Kafka server")
 
             return topic
 
@@ -116,10 +129,13 @@ def create_kafka_connection(max_retries: int, timeout: int):
         raise SystemExit(1)
 
 topic = create_kafka_connection(max_retries=3, timeout=2)
-
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
 app.add_api('openapi.yml', base_path='/receiver', strict_validation=True, validate_responses=True)
 
 
-if __name__ == '__main__':
+def main() -> None:
     app.run(port=8080, debug=False)
+
+
+if __name__ == '__main__':
+    main()

@@ -71,6 +71,7 @@ DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 # Endpoints
 def root() -> None:
+    logger.info("Received connection request from processing server")
     return NoContent, 204
 
 def get_temperature(start_timestamp: str, end_timestamp: str) -> list:
@@ -108,7 +109,7 @@ def get_environment(start_timestamp: str, end_timestamp: str) -> list:
 
 # storage functions
 def temperature(body) -> None:
-    logger.info(f"Received temperature telemetry -- trace ID: {body['trace_id']}")
+    trace = body['trace_id']
     
     session = DB_SESSION()
     temp = Temperature(
@@ -122,11 +123,12 @@ def temperature(body) -> None:
     session.commit()
 
     session.close()
+    logger.info(f"Stored temperature telemetry -- trace ID: {trace}")
     
     return NoContent, 201
 
 def environment(body) -> None:
-    logger.info(f"Received environment telemetry -- trace ID: {body['trace_id']}")
+    trace = body['trace_id']
 
     session = DB_SESSION()
     envr = Environment(
@@ -141,6 +143,7 @@ def environment(body) -> None:
     session.commit()
 
     session.close()
+    logger.info(f"Stored environment telemetry -- trace ID: {trace}")
     
     return NoContent, 201
 
@@ -179,6 +182,7 @@ def connect_kafka_client(max_retries: int, timeout: int):
         try:
             client = KafkaClient(hosts=f'{SERVER_HOST}:{SERVER_PORT}')
             topic = client.topics[str.encode(DATA_TOPIC)]
+            logger.info(f"Client connected to Kafka server")
 
             return topic
 
