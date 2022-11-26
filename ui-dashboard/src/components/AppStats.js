@@ -34,7 +34,6 @@ export default function AppStats() {
                 <h1>Latest Stats</h1>
                 <table className={"StatsTable"}>
 					<tbody>
-                        <caption>Air Quality Readings</caption>
                         <tr>
                             <th colSpan="2">Temperature</th>
                         </tr>
