@@ -22,6 +22,7 @@ from connexion import NoContent
 from datetime import datetime
 from data import Base, create, version
 from flask_cors import CORS, cross_origin
+from json.decoder import JSONDecodeError
 from os import environ, path
 from stats import Stats
 from sqlite3 import connect
@@ -90,24 +91,15 @@ def populate_stats() -> None:
     # Current timestamp
     timestamp = datetime.strftime(datetime.now(), DATETIME_FORMAT)
     # Query storage server endpoints using timestamp
-    # Temperature table
-    temp_res = requests.get(
-        f"{SERVER_URL}/temperature", 
-        params={'start_timestamp': last_timestamp, 
-        'end_timestamp': timestamp}
-        )
-    temp_table_contents = json.loads(temp_res.text)
-    logger.info(f"Response received from database. Status code: {temp_res.status_code}, Content length: {len(temp_table_contents)}")
-    logger.debug(f"Content: {temp_table_contents}")
-    # Environment table
-    env_res = requests.get(
-        f"{SERVER_URL}/environment", 
-        params={'start_timestamp': last_timestamp, 
-        'end_timestamp': timestamp}
-        )
-    env_table_contents = json.loads(env_res.text)
-    logger.info(f"Response received from database. Status code: {env_res.status_code}, Content length: {len(env_table_contents)}")
-    logger.debug(f"Content: {env_table_contents}")
+    try:
+        # Temperature table
+        temp_table_contents = query_temperature(last_timestamp, timestamp)
+        # Environment table
+        env_table_contents = query_environment(last_timestamp, timestamp)
+    
+    except JSONDecodeError:
+        logger.warning(f"Storage server unavailable. {e}")
+    
     # Parse updated telemetry
     try:
         last_temp_packet = temp_table_contents[-1]
@@ -147,6 +139,42 @@ def populate_stats() -> None:
         logger.error(f"Invalid content: {e}")
     
     logger.info("Stopped periodic processing")
+
+
+def query_temperature(last_timestamp, timestamp):
+    try:
+        temp_res = requests.get(
+            f"{SERVER_URL}/temperature", 
+            params={'start_timestamp': last_timestamp, 
+            'end_timestamp': timestamp}
+            )
+        temp_table_contents = json.loads(temp_res.text)
+        logger.info(f"Updating temperature. Content length: {len(temp_table_contents)} -- GET /storage/temperature {temp_res.status_code}")
+        logger.debug(f"Content: {temp_table_contents}")
+
+        return temp_table_contents
+
+    except JSONDecodeError as e:
+        logger.error(f"{e}")
+        raise
+
+def query_environment(last_timestamp, timestamp):
+    try:
+        env_res = requests.get(
+            f"{SERVER_URL}/environment", 
+            params={'start_timestamp': last_timestamp, 
+            'end_timestamp': timestamp}
+            )
+        env_table_contents = json.loads(env_res.text)
+        logger.info(f"Updating environment. Content length: {len(env_table_contents)} -- GET /storage/environment {env_res.status_code}")
+        logger.debug(f"Content: {env_table_contents}")
+
+        return env_table_contents
+
+    except JSONDecodeError as e:
+        logger.error(f"{e}")
+        raise
+
 
 # Database functions
 def query_db() -> dict:

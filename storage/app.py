@@ -87,7 +87,8 @@ def get_temperature(start_timestamp: str, end_timestamp: str) -> list:
         results_list.append(reading.to_dict())
     
     session.close()
-    # logger.debug(f"Query for temperature after {timestamp_datetime} returns {len(results_list)}")
+    logger.debug(f"Query for temperature after {start_timestamp_datetime} returns {len(results_list)}")
+
     return results_list, 200
 
 
@@ -104,11 +105,13 @@ def get_environment(start_timestamp: str, end_timestamp: str) -> list:
         results_list.append(reading.to_dict())
     
     session.close()
-    # logger.debug(f"Query for environment after {timestamp_datetime} returns {len(results_list)}")
+    logger.debug(f"Query for environment after {start_timestamp_datetime} returns {len(results_list)}")
+
     return results_list, 200
 
 # storage functions
 def temperature(body) -> None:
+    location = body['location']
     trace = body['trace_id']
     
     session = DB_SESSION()
@@ -123,11 +126,12 @@ def temperature(body) -> None:
     session.commit()
 
     session.close()
-    logger.info(f"Stored temperature telemetry -- trace ID: {trace}")
+    logger.info(f"Stored temperature data from {location} -- trace ID: {trace}")
     
     return NoContent, 201
 
 def environment(body) -> None:
+    location = body['location']
     trace = body['trace_id']
 
     session = DB_SESSION()
@@ -143,7 +147,7 @@ def environment(body) -> None:
     session.commit()
 
     session.close()
-    logger.info(f"Stored environment telemetry -- trace ID: {trace}")
+    logger.info(f"Stored environment data from {location} -- trace ID: {trace}")
     
     return NoContent, 201
 
