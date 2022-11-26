@@ -96,48 +96,47 @@ def populate_stats() -> None:
         temp_table_contents = query_temperature(last_timestamp, timestamp)
         # Environment table
         env_table_contents = query_environment(last_timestamp, timestamp)
+        # Parse updated telemetry
+        try:
+            last_temp_packet = temp_table_contents[-1]
+            count = last_temp_packet['id']
+            # Temperature telemetry
+            temp_list = list()
+            temp_buffer = float()
+            for packet in temp_table_contents:
+                temp_list.append(packet['temperature'])
+                temp_buffer += packet['temperature']
+            new_buffer = last_buffer + temp_buffer
+            # Environment telemetry
+            pm25_list = list()
+            co2_list = list()
+            for packet in env_table_contents:
+                pm25_list.append(packet['environment']['pm2_5'])
+                co2_list.append(packet['environment']['co_2'])
+            # Update stats
+            payload = {
+                'count': count, 
+                'temp_buffer': new_buffer, 
+                'max_temp': max(last_max, max(temp_list, default=-22)), 
+                'min_temp': min(last_min, min(temp_list, default=52)), 
+                'avg_temp': round(new_buffer/count, 2), 
+                'max_pm2_5': max(last_max_pm25, max(pm25_list, default=0)), 
+                'max_co_2': max(last_max_co_2, max(co2_list, default=0)), 
+                'last_updated': timestamp
+            }
+            # Add new row to database
+            insert_db(payload)
+            logger.info("Database updated with latest telemetry")
+
+        except IndexError:
+            logger.info("Telemetry is up to date")
+        
+        except KeyError as e:
+            logger.error(f"Invalid content: {e}")
     
     except JSONDecodeError:
         logger.warning(f"Storage server unavailable.")
-    
-    # Parse updated telemetry
-    try:
-        last_temp_packet = temp_table_contents[-1]
-        count = last_temp_packet['id']
-        # Temperature telemetry
-        temp_list = list()
-        temp_buffer = float()
-        for packet in temp_table_contents:
-            temp_list.append(packet['temperature'])
-            temp_buffer += packet['temperature']
-        new_buffer = last_buffer + temp_buffer
-        # Environment telemetry
-        pm25_list = list()
-        co2_list = list()
-        for packet in env_table_contents:
-            pm25_list.append(packet['environment']['pm2_5'])
-            co2_list.append(packet['environment']['co_2'])
-        # Update stats
-        payload = {
-            'count': count, 
-            'temp_buffer': new_buffer, 
-            'max_temp': max(last_max, max(temp_list, default=-22)), 
-            'min_temp': min(last_min, min(temp_list, default=52)), 
-            'avg_temp': round(new_buffer/count, 2), 
-            'max_pm2_5': max(last_max_pm25, max(pm25_list, default=0)), 
-            'max_co_2': max(last_max_co_2, max(co2_list, default=0)), 
-            'last_updated': timestamp
-        }
-        # Add new row to database
-        insert_db(payload)
-        logger.info("Database updated with latest telemetry")
-
-    except IndexError:
-        logger.info("Telemetry is up to date")
-    
-    except KeyError as e:
-        logger.error(f"Invalid content: {e}")
-    
+        
     logger.info("Stopped periodic processing")
 
 
