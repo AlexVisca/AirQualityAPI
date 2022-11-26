@@ -12,11 +12,15 @@ info:
     url: https://www.gnu.org/licenses/gpl-3.0.html
   version: '2.0.0'
 tags:
+- name: Connection
+  description: Connection handling
 - name: Measurements
   description: Data collected from environmental sensors
 paths:
   /:
     head:
+      tags:
+        - Connection
       operationId: app.root
       responses:
         '204':
