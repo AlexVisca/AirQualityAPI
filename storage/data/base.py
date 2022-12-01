@@ -15,7 +15,7 @@ def connect(**kwargs):
 
 
 create_temp = '''
-    CREATE TABLE temperature
+    CREATE TABLE IF NOT EXISTS temperature
     (id_ INT NOT NULL AUTO_INCREMENT,
     date_created VARCHAR(100) NOT NULL,
     device_id VARCHAR(250) NOT NULL,
@@ -27,7 +27,7 @@ create_temp = '''
     '''
 
 create_envr = '''
-    CREATE TABLE environment
+    CREATE TABLE IF NOT EXISTS environment
     (id_ INT NOT NULL AUTO_INCREMENT,
     date_created VARCHAR(100) NOT NULL,
     device_id VARCHAR(250) NOT NULL,
