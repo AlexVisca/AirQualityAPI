@@ -17,14 +17,14 @@ function App() {
         <div className="App">
             <img src={logo} className="App-logo" alt="logo" height="200px" width="200px"/>
             <div>
-                <h2>OpenAtmos&copy; Air Quality Monitor</h2>
+                <h1>OpenAtmos&copy; Air Quality Monitor</h1>
             </div>
             <div>
-                <h3>Latest Measurements</h3>
+                <h2>Latest Measurements</h2>
                 <AppStats/>
-                <h4>Audit Endpoints</h4>
+                <h3>Audit Endpoints</h3>
                 {rendered_endpoints}
-                <h4>System Health</h4>
+                <h3>System Health</h3>
                 <AppStatus/>
             </div>
         </div>

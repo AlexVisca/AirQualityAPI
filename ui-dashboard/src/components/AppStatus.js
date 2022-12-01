@@ -33,11 +33,8 @@ export default function AppStatus() {
             <div>
                 <table className={"StatusTable"}>
 					<tbody>
-                        <tr>
-                            <th colSpan="2">System Status</th>
-                        </tr>
 						<tr>
-							<td colspan="2">System: {status['system']}</td>
+							<th colspan="2">System Status: {status['system']}</th>
 						</tr>
 						<tr>
 							<td>Receiver: </td>
@@ -57,7 +54,7 @@ export default function AppStatus() {
 						</tr>
 					</tbody>
                 </table>
-                <h6>Last Updated: {status['last_updated']}</h6>
+                <h5>Last Updated: {status['last_updated']}</h5>
             </div>
         )
     }

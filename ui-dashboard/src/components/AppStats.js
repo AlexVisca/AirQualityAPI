@@ -55,7 +55,7 @@ export default function AppStats() {
 						</tr>
 					</tbody>
                 </table>
-                <h6>Last Updated: {stats['last_updated']}</h6>
+                <h5>Last Updated: {stats['last_updated']}</h5>
             </div>
         )
     }

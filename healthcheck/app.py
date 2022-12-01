@@ -195,7 +195,7 @@ def init_scheduler(interval: int) -> None:
     sched.start()
 
 app = connexion.FlaskApp(__name__, specification_dir='openapi/')
-app.add_api('openapi.yml', strict_validation=True, validate_responses=True)
+app.add_api('openapi.yml', base_path='/healthcheck', strict_validation=True, validate_responses=True)
 
 
 def main() -> None:
