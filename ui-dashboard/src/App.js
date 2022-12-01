@@ -17,7 +17,7 @@ function App() {
         <div className="App">
             <img src={logo} className="App-logo" alt="logo" height="230px" width="280px"/>
             <div>
-                <h1 className="App-header">OpenAtmos&copy; Air Quality Monitor</h1>
+                <h1>OpenAtmos&copy; Air Quality Monitor</h1>
             </div>
             <div>
                 <h2>Latest Measurements</h2>
