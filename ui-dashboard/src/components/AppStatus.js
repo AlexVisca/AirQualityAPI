@@ -34,7 +34,7 @@ export default function AppStatus() {
                 <table className={"StatusTable"}>
 					<tbody>
 						<tr>
-							<th colspan="2">System Status: {status['system']}</th>
+							<th className={status['system']} colspan="2">System Status: {status['system']}</th>
 						</tr>
 						<tr>
 							<td>Receiver: </td>
