@@ -40,20 +40,24 @@ export default function AppStatus() {
 							<td colspan="2">System: {status['system']}</td>
 						</tr>
 						<tr>
-							<td colSpan="2">Receiver: {status['receiver']}</td>
+							<td>Receiver: </td>
+                            <td>{status['receiver']}</td>
 						</tr>
                         <tr>
-                            <td colSpan="2">Storage: {status['storage']}</td>
+                            <td>Storage: </td>
+                            <td>{status['storage']}</td>
                         </tr>
 						<tr>
-							<td colspan="2">Processing: {status['processing']}</td>
+							<td>Processing: </td>
+                            <td>{status['processing']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Audit Log: {status['auditlog']}</td>
+							<td>Audit Log: </td>
+                            <td>{status['audit_log']}</td>
 						</tr>
 					</tbody>
                 </table>
-                <h3>Last Updated: {status['last_updated']}</h3>
+                <h6>Last Updated: {status['last_updated']}</h6>
             </div>
         )
     }

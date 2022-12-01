@@ -77,9 +77,9 @@ def check_(service):
             )
         res.raise_for_status()
         if res.status_code == 200:
-            logger.info(f"{service} status: up - {res.text}")
             msg = json.loads(res.text)
             response = {"message": msg['message'], "status_code": res.status_code}
+            logger.debug(f"{service} - {response}")
             
             return response
         else:
@@ -120,9 +120,11 @@ def check_health():
         if res == None:
             status[service] = "down"
             system.append(0)
+            logger.info(f"{service} status: {status[service]}")
         else:
             status[service] = "running"
             system.append(1)
+            logger.info(f"{service} status: {status[service]}")
     
     if all(system):
         status['system'] = "green"
@@ -180,11 +182,11 @@ def init_database(filename: str):
         }
     abs_path = os.path.join(os.path.dirname(__file__), filename)
     if not os.path.exists(abs_path):
-        sqlite_client(filename, create_table)
+        sqlite_client(abs_path, create_table)
         insert_(status)
-        logger.info(f"Connected to {filename}")
+        logger.info(f"Datastore: {abs_path}")
     elif os.path.exists(abs_path):
-        logger.info(f"Connected to {filename}")
+        logger.info(f"Datastore: {abs_path}")
 
 
 def init_scheduler(interval: int) -> None:

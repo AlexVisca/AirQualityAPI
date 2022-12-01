@@ -31,7 +31,6 @@ export default function AppStats() {
     } else if (isLoaded === true){
         return(
             <div>
-                <h1>Latest Stats</h1>
                 <table className={"StatsTable"}>
 					<tbody>
                         <tr>
@@ -44,6 +43,7 @@ export default function AppStats() {
 						<tr>
 							<td colspan="2">Average: {stats['avg_temp']}&deg;C</td>
 						</tr>
+                        <tr></tr>
                         <tr>
                             <th colSpan="2">Environment</th>
                         </tr>
@@ -55,8 +55,7 @@ export default function AppStats() {
 						</tr>
 					</tbody>
                 </table>
-                <h3>Last Updated: {stats['last_updated']}</h3>
-
+                <h6>Last Updated: {stats['last_updated']}</h6>
             </div>
         )
     }

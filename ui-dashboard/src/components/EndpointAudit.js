@@ -32,7 +32,7 @@ export default function EndpointAudit(props) {
         
         return (
             <div>
-                <h3>{props.endpoint}-{rand_val}</h3>
+                <h5>{props.endpoint}-{rand_val}</h5>
                 {JSON.stringify(log)}
             </div>
         )
