@@ -77,7 +77,7 @@ def check_(service):
             )
         res.raise_for_status()
         if res.status_code == 200:
-            logger.info(f"{service} status: up")
+            logger.info(f"{service} status: up - {res.text}")
             msg = json.loads(res.text)
             response = {"message": msg['message'], "status_code": res.status_code}
             
