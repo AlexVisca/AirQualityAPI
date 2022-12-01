@@ -26,6 +26,31 @@ paths:
         '204':
           description: 'Connection successful'
 
+  /health:
+    get:
+      summary: poll service health
+      operationId: app.health
+      description: gets the service health
+      responses:
+        '200':
+          description: 'Service is running'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: 'Service is down'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
   /temperature:
     post:
       tags:

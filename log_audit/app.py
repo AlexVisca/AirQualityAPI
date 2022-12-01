@@ -50,6 +50,9 @@ SERVER_PORT = app_config['server']['port']
 DATA_TOPIC = app_config['events']['topic']
 
 # endpoints
+def health():
+    return {"message": "OK"}, 200
+
 def get_temperature(index):
     try:
         consumer = topic.get_simple_consumer(

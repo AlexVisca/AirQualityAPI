@@ -1,0 +1,9 @@
+version: 1
+localhost:
+  fqdn: http://127.0.0.1
+datastore:
+  filename: healthcheck.sqlite
+scheduler:
+  period_sec: 20
+connection:
+  timeout: 5

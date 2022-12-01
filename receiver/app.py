@@ -56,6 +56,9 @@ def root():
     
     return NoContent, 204
 
+def health():
+    return {"message": "OK"}, 200
+
 def temperature(body):
     location = body['location']
     trace = body['trace_id']

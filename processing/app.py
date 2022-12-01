@@ -65,6 +65,9 @@ Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
 
 # Endpoints
+def health():
+    return {"message": "OK"}, 200
+
 def get_stats() -> dict:
     data = query_db()
     stats = {

@@ -74,6 +74,9 @@ def root() -> None:
     logger.info("Received connection request from processing server")
     return NoContent, 204
 
+def health():
+    return {"message": "OK"}, 200
+
 def get_temperature(start_timestamp: str, end_timestamp: str) -> list:
     session = DB_SESSION()
     start_timestamp_datetime = datetime.strptime(start_timestamp, DATETIME_FORMAT)

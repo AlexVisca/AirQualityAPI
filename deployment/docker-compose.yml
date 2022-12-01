@@ -49,6 +49,22 @@ services:
     networks:
       - 'api.network'
 
+  nginx:
+    image: nginx:latest
+    volumes:
+      - /home/api-dev/nginx:/etc/nginx
+    ports:
+      - '80:80'
+    networks:
+      - 'api.network'
+    depends_on:
+      - "receiver"
+      - "storage"
+      - "processing"
+      - "audit_log"
+      - "healthcheck"
+      - "dashboard"
+
   receiver:
     hostname: receiver
     build: 
@@ -98,8 +114,6 @@ services:
     image: api_processing:latest
     environment:
       TARGET_ENV: prod
-      # SERVER_HOST: api-lxvdev.westus3.cloudapp.azure.com
-      # SERVER_PORT: 80
     volumes:
       - /home/api-dev/config/processing:/config
       - /home/api-dev/logs:/logs
@@ -130,6 +144,27 @@ services:
     depends_on:
       - "kafka"
 
+  healthcheck:
+    hostname: healthcheck
+    build: 
+      context: ../healthcheck
+    image: api_healthcheck:latest
+    environment:
+      TARGET_ENV: prod
+    volumes:
+      - /home/api-dev/config/healthcheck:/config
+      - /home/api-dev/logs:/logs
+      - check:/src/data
+    ports:
+      - '8120'
+    networks:
+      - 'api.network'
+    depends_on:
+      - "receiver"
+      - "storage"
+      - "processing"
+      - "audit_log"
+
   dashboard:
     hostname: dashboard
     build: 
@@ -142,25 +177,12 @@ services:
     depends_on:
       - "processing"
       - "audit_log"
-
-  nginx:
-    image: nginx:latest
-    volumes:
-      - /home/api-dev/nginx:/etc/nginx
-    ports:
-      - '80:80'
-    networks:
-      - 'api.network'
-    depends_on:
-      - "receiver"
-      - "storage"
-      - "processing"
-      - "audit_log"
-      - "dashboard"
+      - "healthcheck"
 
 volumes:
   mysql:
   stats:
+  check:
 
 networks:
   api.network:
