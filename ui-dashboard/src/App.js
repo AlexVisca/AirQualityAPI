@@ -15,17 +15,17 @@ function App() {
 
     return (
         <div className="App">
-            <img src={logo} className="App-logo" alt="logo" height="200px" width="200px"/>
+            <img src={logo} className="App-logo" alt="logo" height="230px" width="280px"/>
             <div>
                 <h1>OpenAtmos&copy; Air Quality Monitor</h1>
             </div>
             <div>
                 <h2>Latest Measurements</h2>
                 <AppStats/>
-                <h3>Audit Endpoints</h3>
-                {rendered_endpoints}
                 <h3>System Health</h3>
                 <AppStatus/>
+                <h3>Audit Endpoints</h3>
+                {rendered_endpoints}
             </div>
         </div>
     );
