@@ -34,22 +34,22 @@ export default function AppStatus() {
                 <table className={"StatusTable"}>
 					<tbody>
 						<tr>
-							<th className={status['system']} colspan="2">System Status: {status['system']}</th>
+							<th className={status['system']} colspan="2">System Health</th>
 						</tr>
 						<tr>
-							<td>Receiver: </td>
+							<td text-align='left'>Receiver: </td>
                             <td>{status['receiver']}</td>
 						</tr>
                         <tr>
-                            <td>Storage: </td>
+                            <td text-align='left'>Storage: </td>
                             <td>{status['storage']}</td>
                         </tr>
 						<tr>
-							<td>Processing: </td>
+							<td text-align='left'>Processing: </td>
                             <td>{status['processing']}</td>
 						</tr>
 						<tr>
-							<td>Audit Log: </td>
+							<td text-align='left'>Audit Log: </td>
                             <td>{status['audit_log']}</td>
 						</tr>
 					</tbody>

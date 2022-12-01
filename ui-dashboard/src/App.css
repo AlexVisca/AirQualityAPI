@@ -39,12 +39,18 @@
 
 .green {
   color: green;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .yellow {
   color: yellow;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .red {
   color: red;
+  font-size: 1rem;
+  font-weight: 300;
 }
