@@ -12,15 +12,15 @@ class Health(Base):
     system = Column(String(250), nullable=False)
     receiver = Column(String(250), nullable=False)
     storage = Column(String(250), nullable=False)
-    auditlog = Column(String(250), nullable=False)
+    audit_log = Column(String(250), nullable=False)
     processing = Column(String(250), nullable=False)
     last_updated = Column(DateTime, nullable=False)
 
-    def __init__(self, system, receiver, storage, auditlog, processing, last_updated) -> None:
+    def __init__(self, system, receiver, storage, audit_log, processing, last_updated) -> None:
         self.system = system
         self.receiver = receiver
         self.storage = storage
-        self.auditlog = auditlog
+        self.audit_log = audit_log
         self.processing = processing
         self.last_updated = last_updated
 
@@ -29,7 +29,7 @@ class Health(Base):
         dict['system'] = self.system
         dict['receiver'] = self.receiver
         dict['storage'] = self.storage
-        dict['auditlog'] = self.auditlog
+        dict['audit_log'] = self.audit_log
         dict['processing'] = self.processing
         dict['last_updated'] = self.last_updated
 
@@ -51,7 +51,7 @@ create_table = '''
     system VARCHAR(250) NOT NULL,
     receiver VARCHAR(250) NOT NULL,
     storage VARCHAR(250) NOT NULL,
-    auditlog VARCHAR(250) NOT NULL,
+    audit_log VARCHAR(250) NOT NULL,
     processing VARCHAR(250) NOT NULL,
     last_updated VARCHAR(100) NOT NULL)
 '''

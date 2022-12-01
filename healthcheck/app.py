@@ -62,7 +62,7 @@ def get_health() -> dict:
         "system": data['system'], 
         "receiver": data['receiver'], 
         "storage": data['storage'], 
-        "auditlog": data['auditlog'], 
+        "audit_log": data['audit_log'], 
         "processing": data['processing'], 
         "last_updated": data['last_updated']
         }
@@ -72,7 +72,7 @@ def get_health() -> dict:
 def check_(service):
     try:
         res = requests.get(
-            f'{FQDN_URL}/{service}/health', #TODO: Add /health to services
+            f'{FQDN_URL}/{service}/health', 
             timeout=TIMEOUT
             )
         res.raise_for_status()
@@ -104,14 +104,14 @@ def check_health():
     services = [
         "receiver", 
         "storage", 
-        "auditlog", 
+        "audit_log", 
         "processing"
         ]
     status = {
         "system": str | None, 
         "receiver": str | None, 
         "storage": str | None, 
-        "auditlog": str | None, 
+        "audit_log": str | None, 
         "processing": str | None,
         "last_updated": str | None
         }
@@ -145,7 +145,7 @@ def query_db():
         "system": result.system, 
         "receiver": result.receiver, 
         "storage": result.storage, 
-        "auditlog": result.auditlog, 
+        "audit_log": result.audit_log, 
         "processing": result.processing,
         "last_updated": result.last_updated.strftime(DATETIME_FORMAT)
         }
@@ -159,7 +159,7 @@ def insert_(data: dict) -> None:
         system=data['system'], 
         receiver=data['receiver'], 
         storage=data['storage'], 
-        auditlog=data['auditlog'], 
+        audit_log=data['audit_log'], 
         processing=data['processing'], 
         last_updated=datetime.strptime(data['last_updated'], DATETIME_FORMAT)
         )
@@ -174,7 +174,7 @@ def init_database(filename: str):
         "system": init_msg, 
         "receiver": init_msg, 
         "storage": init_msg, 
-        "auditlog": init_msg, 
+        "audit_log": init_msg, 
         "processing": init_msg,
         "last_updated": datetime.strftime(datetime.now(), DATETIME_FORMAT)
         }
