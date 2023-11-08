@@ -1,10 +1,12 @@
-2022 &copy; Alexander Visca
-# Air Quality API
->DISCLAIMER: This repository is for demonstration purposes only.
+> Copyright &copy; 2022 Alexander Visca. All rights reserved.
+# OpenAtmos&trade; Air Quality Monitor
+**API Spec:** OpenAPI 3.0
 
-Meets OpenAPI spec 3.0
+**For demonstration purposes only.**
+OpenAtmos&trade; Air Quality Monitor is a data management backend for aggregating sensor telemetry and metrics from remote edge devices. It is a proof of concept for asynchronous service architecture and distributed systems design.
 
-## Description
+> [!IMPORTANT]
+> Credentials included in this repository are for *demonstration purposes only* and are not replicated in production environments.  
 
-AirQualityAPI is a data management API for monitoring air quality metrics.
-
+## Licence
+This repository is not licenced. The author retains all rights.
